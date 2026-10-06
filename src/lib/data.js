@@ -1,0 +1,4416 @@
+export const EDITORIAL_SOURCES = [
+  {
+    id: 'allure',
+    publication: 'Allure',
+    title: 'The Science of Vitamin C: Why Formulation Stability Trumps Concentration',
+    summary: 'Allure investigative editors breakdown L-ascorbic acid efficacy, proper morning layering sequence, and the necessity of airtight dark packaging.',
+    link: 'https://www.allure.com/story/vitamin-c-skin-benefits',
+    badge: 'Formulation Science',
+    date: 'March 2025'
+  },
+  {
+    id: 'british-vogue',
+    publication: 'British Vogue',
+    title: 'The Best High Street Skincare Routines That Rival Harley Street Treatments',
+    summary: 'Vogue Beauty explores dermatologist-approved ceramide routines and barrier restoration methods accessible across UK and US pharmacies.',
+    link: 'https://www.vogue.co.uk/beauty/article/best-skincare-products',
+    badge: 'Pharmacy Edit',
+    date: 'February 2025'
+  },
+  {
+    id: 'harpers-bazaar',
+    publication: "Harper's Bazaar",
+    title: 'The Universal Sunscreen Guide: How Daily UV Defense Transforms Skin Longevity',
+    summary: 'An authoritative report examining how broad-spectrum mineral and transparent chemical UV filters preserve dermal collagen and prevent photoaging.',
+    link: 'https://www.harpersbazaar.com/beauty/skin-care/',
+    badge: 'SPF Routine',
+    date: 'April 2025'
+  },
+  {
+    id: 'marie-claire',
+    publication: 'Marie Claire',
+    title: 'Retinol Sandwiching & Micro-Dosing: The Dermatologist Guide to Zero Irritation',
+    summary: 'Dermatologists explain how to safely introduce vitamin A into your nighttime routine without triggering peeling, redness, or barrier compromise.',
+    link: 'https://www.marieclaire.co.uk/beauty/skincare',
+    badge: 'Active Layering',
+    date: 'January 2025'
+  }
+];
+
+export const CATEGORIES = [
+  {
+    id: 'cleansers',
+    name: 'Cleansers',
+    count: 10,
+    bg: '#EAF7EE',
+    textColor: '#1e683b',
+    icon: 'Sparkles',
+    image: '/images/cleanser_bottle.jpg',
+    description: 'Gentle foaming, gel, and milky cleansers that wash away impurities without stripping your skin’s acid mantle.'
+  },
+  {
+    id: 'moisturizers',
+    name: 'Moisturizers',
+    count: 10,
+    bg: '#FDF0F3',
+    textColor: '#ad284a',
+    icon: 'Heart',
+    image: '/images/ceramide_cream.jpg',
+    description: 'Ceramide-rich barrier creams, peptides, and humectant hydrators that lock in water and repair lipid bonds.'
+  },
+  {
+    id: 'serums',
+    name: 'Serums',
+    count: 10,
+    bg: '#EAF5FA',
+    textColor: '#1a5f7a',
+    icon: 'Droplet',
+    image: '/images/vitamin_c.jpg',
+    description: 'Potent concentrated actives: Pure Vitamin C, Hyaluronic Acid, and Niacinamide engineered for rapid skin renewal.'
+  },
+  {
+    id: 'sunscreens',
+    name: 'Sunscreens',
+    count: 10,
+    bg: '#FEF9E7',
+    textColor: '#8a6805',
+    icon: 'Sun',
+    image: '/images/sunscreen.jpg',
+    description: 'Broad-spectrum mineral and invisible chemical SPFs that defend against premature wrinkles, dark spots, and UVA damage.'
+  },
+  {
+    id: 'anti-aging',
+    name: 'Anti-Aging',
+    count: 10,
+    bg: '#FDF2EE',
+    textColor: '#a73e1c',
+    icon: 'Clock',
+    image: '/images/retinol_serum.jpg',
+    description: 'Clinical retinoids, retinaldehyde, and collagen-boosting serums that smooth fine lines and refine skin texture.'
+  },
+  {
+    id: 'masks',
+    name: 'Masks',
+    count: 10,
+    bg: '#EBF7F2',
+    textColor: '#1c634c',
+    icon: 'Shield',
+    image: '/images/editor_clay.jpg',
+    description: 'Restorative clay detoxifying masks and overnight sleeping hydrators that reboot fatigued, reactive skin.'
+  }
+];
+
+export const ALL_POSTS = [
+  {
+    "id": "c-1",
+    "slug": "cerave-hydrating-cleanser-guide",
+    "badge": "Derm Favorite",
+    "rank": "#1",
+    "categoryTag": "ACID MANTLE WASH",
+    "category": "Cleansers",
+    "brand": "CeraVe",
+    "title": "CeraVe Hydrating Facial Cleanser: Protecting the Acid Mantle While Washing",
+    "subtitle": "The non-foaming lotion cleanse that dissolves surface impurities without disrupting skin barrier lipids.",
+    "excerpt": "Formulated with 3 essential ceramides and hyaluronic acid, this lotion cleanser respects the natural acid mantle, making it ideal for dehydrated, dry, or barrier-compromised skin...",
+    "image": "/images/cleanser_bottle.jpg",
+    "author": {
+      "name": "Dr. Rachel Adams, MD",
+      "role": "Board-Certified Dermatologist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 24, 2025",
+    "readTime": "5 min read",
+    "rating": 4.9,
+    "reviewCount": 310,
+    "commentCount": 42,
+    "routineStep": "Step 1: AM/PM Gentle Cleanser",
+    "frequency": "Twice Daily (AM & PM)",
+    "amountToUse": "1 to 2 pumps",
+    "targetSkinGoal": "Barrier Preservation & Non-Stripping Cleanse",
+    "skinTypes": [
+      "Dry Skin",
+      "Sensitive Skin",
+      "Eczema-Prone",
+      "Compromised Barrier"
+    ],
+    "keyIngredients": [
+      "Ceramides 1, 3, 6-II",
+      "Hyaluronic Acid",
+      "Glycerin",
+      "Cholesterol"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Wet Face with Tepid Water",
+        "desc": "Avoid steaming hot water which melts essential intercellular lipids."
+      },
+      {
+        "step": "Step 2: Massage Gently for 60 Seconds",
+        "desc": "Work 1–2 pumps in circular motions across cheeks, forehead, and jawline."
+      },
+      {
+        "step": "Step 3: Rinse Thoroughly",
+        "desc": "Splash gently with lukewarm water and pat dry with a fresh microfiber towel."
+      }
+    ],
+    "skinBenefits": [
+      "Preserves the delicate acid mantle with a skin-identical pH of 5.5",
+      "Provides MVE controlled-release hydration that lasts beyond washing",
+      "Leaves skin soft, supple, and zero tight or squeaky sensation"
+    ],
+    "pros": [
+      "Non-comedogenic and fragrance-free",
+      "Accepted by the National Eczema Association",
+      "Safe around sensitive eye contours"
+    ],
+    "cons": [
+      "Does not lather into a foam, which some oily skin users miss"
+    ],
+    "verdict": "The clinical gold standard daily wash for anyone experiencing tightness, stinging, or redness after washing.",
+    "fullContent": {
+      "intro": "CeraVe Hydrating Facial Cleanser: Protecting the Acid Mantle While Washing is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated CeraVe's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "CeraVe Hydrating Facial Cleanser: Protecting the Acid Mantle While Washing offers an evidence-based approach to barrier preservation & non-stripping cleanse, utilizing Ceramides 1, 3, 6-II and Hyaluronic Acid.",
+      "ingredientsBreakdown": "Key active components include Ceramides 1, 3, 6-II, Hyaluronic Acid, Glycerin, Cholesterol, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Dry Skin, Sensitive Skin, Eczema-Prone, Compromised Barrier looking to achieve barrier preservation & non-stripping cleanse.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Wet Face with Tepid Water; Step 2: Massage Gently for 60 Seconds; Step 3: Rinse Thoroughly.",
+      "finalVerdict": "The clinical gold standard daily wash for anyone experiencing tightness, stinging, or redness after washing."
+    }
+  },
+  {
+    "id": "c-2",
+    "slug": "la-roche-posay-toleriane-cleanser",
+    "badge": "Sensitive Skin Pick",
+    "rank": "#2",
+    "categoryTag": "PREBIOTIC CLEANSING",
+    "category": "Cleansers",
+    "brand": "La Roche-Posay",
+    "title": "La Roche-Posay Toleriane Dermo-Cleanser: Prebiotic Calm for Reactive Skin",
+    "subtitle": "How thermal spring water and minimal surfactant technology calm flushed, stinging skin.",
+    "excerpt": "Engineered specifically for hyper-reactive and allergy-prone skin, this milky fluid gently cleanses without friction or stinging, infused with soothing prebiotic thermal water...",
+    "image": "/images/cleanser_bottle.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 22, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 228,
+    "commentCount": 36,
+    "routineStep": "Step 1: Morning & Evening Gentle Wash",
+    "frequency": "Daily (AM & PM)",
+    "amountToUse": "Dime-sized amount",
+    "targetSkinGoal": "Soothe Facial Redness & Prevent Flaring",
+    "skinTypes": [
+      "Rosacea-Prone",
+      "Hyper-Sensitive",
+      "Allergy-Prone",
+      "Dry"
+    ],
+    "keyIngredients": [
+      "La Roche-Posay Thermal Spring Water",
+      "Glycerin",
+      "Niacinamide"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Dispense onto Dry or Damp Skin",
+        "desc": "Smooth the gentle milk with soft fingertips in slow circular motions."
+      },
+      {
+        "step": "Step 2: Wipe or Rinse",
+        "desc": "Can be wiped off with a soft cotton pad without water if tap water triggers redness."
+      }
+    ],
+    "skinBenefits": [
+      "Zero surfactant sting on active rosacea or dermatitis flares",
+      "Prebiotic water feeds beneficial skin microflora to boost natural defenses"
+    ],
+    "pros": [
+      "Strict minimalist formula with zero preservatives or fragrances",
+      "Dermatologist tested on allergy-prone skin"
+    ],
+    "cons": [
+      "Needs a dedicated oil balm first if removing waterproof mascara"
+    ],
+    "verdict": "A lifesaver for irritated skin that reacts to virtually every standard facial cleanser on the market.",
+    "fullContent": {
+      "intro": "La Roche-Posay Toleriane Dermo-Cleanser: Prebiotic Calm for Reactive Skin is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated La Roche-Posay's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "La Roche-Posay Toleriane Dermo-Cleanser: Prebiotic Calm for Reactive Skin offers an evidence-based approach to soothe facial redness & prevent flaring, utilizing La Roche-Posay Thermal Spring Water and Glycerin.",
+      "ingredientsBreakdown": "Key active components include La Roche-Posay Thermal Spring Water, Glycerin, Niacinamide, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Rosacea-Prone, Hyper-Sensitive, Allergy-Prone, Dry looking to achieve soothe facial redness & prevent flaring.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Dispense onto Dry or Damp Skin; Step 2: Wipe or Rinse.",
+      "finalVerdict": "A lifesaver for irritated skin that reacts to virtually every standard facial cleanser on the market."
+    }
+  },
+  {
+    "id": "c-3",
+    "slug": "cetaphil-gentle-skin-cleanser",
+    "badge": "Everyday Classic",
+    "rank": "#3",
+    "categoryTag": "BARRIER HYDRATION",
+    "category": "Cleansers",
+    "brand": "Cetaphil",
+    "title": "Cetaphil Gentle Skin Cleanser: The Balanced Everyday pH Cleanser",
+    "subtitle": "The reformulated classic with Niacinamide and Panthenol that balances natural moisture levels.",
+    "excerpt": "Now reinforced with vitamin B3 (niacinamide), provitamin B5 (panthenol), and hydrating glycerin, this dermatologist-backed staple preserves moisture for 48 hours...",
+    "image": "/images/cleanser_bottle.jpg",
+    "author": {
+      "name": "Dr. Michael Chen, MD",
+      "role": "Clinical Dermatology Fellow",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 20, 2025",
+    "readTime": "4 min read",
+    "rating": 4.7,
+    "reviewCount": 195,
+    "commentCount": 28,
+    "routineStep": "Step 1: Daily Cleansing",
+    "frequency": "Morning & Night",
+    "amountToUse": "1 pump",
+    "targetSkinGoal": "Maintain Natural Moisture Balance",
+    "skinTypes": [
+      "Normal to Dry",
+      "Sensitive Skin",
+      "Combination Skin"
+    ],
+    "keyIngredients": [
+      "Glycerin",
+      "Niacinamide (Vitamin B3)",
+      "Panthenol (Pro-Vitamin B5)"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Apply to Damp Skin",
+        "desc": "Massage in gentle upward strokes across the entire face."
+      },
+      {
+        "step": "Step 2: Rinse with Tepid Water",
+        "desc": "Leaves a breathable moisture veil without residual film."
+      }
+    ],
+    "skinBenefits": [
+      "Clinically proven to defend against 5 signs of skin sensitivity",
+      "Zero pore clogging"
+    ],
+    "pros": [
+      "Gentle enough for post-procedure healing skin",
+      "Fragrance-free and hypoallergenic"
+    ],
+    "cons": [
+      "Very light consistency that takes getting used to if you love bubbles"
+    ],
+    "verdict": "A trusted essential that reliably protects skin resilience without ever drying out your complexion.",
+    "fullContent": {
+      "intro": "Cetaphil Gentle Skin Cleanser: The Balanced Everyday pH Cleanser is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Cetaphil's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Cetaphil Gentle Skin Cleanser: The Balanced Everyday pH Cleanser offers an evidence-based approach to maintain natural moisture balance, utilizing Glycerin and Niacinamide (Vitamin B3).",
+      "ingredientsBreakdown": "Key active components include Glycerin, Niacinamide (Vitamin B3), Panthenol (Pro-Vitamin B5), engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Normal to Dry, Sensitive Skin, Combination Skin looking to achieve maintain natural moisture balance.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Apply to Damp Skin; Step 2: Rinse with Tepid Water.",
+      "finalVerdict": "A trusted essential that reliably protects skin resilience without ever drying out your complexion."
+    }
+  },
+  {
+    "id": "c-4",
+    "slug": "vanicream-gentle-facial-cleanser",
+    "badge": "Ultra-Pure",
+    "rank": "#4",
+    "categoryTag": "HYPOALLERGENIC WASH",
+    "category": "Cleansers",
+    "brand": "Vanicream",
+    "title": "Vanicream Gentle Facial Cleanser: Pure Formula for Allergy-Prone Skin",
+    "subtitle": "Free of common chemical irritants, dyes, fragrance, masking fragrance, and parabens.",
+    "excerpt": "When standard gentle cleansers still cause itching or breakouts, Vanicream strips out every potential allergen, leaving a mild foaming wash that rinses cleanly...",
+    "image": "/images/cleanser_bottle.jpg",
+    "author": {
+      "name": "Dr. Rachel Adams, MD",
+      "role": "Board-Certified Dermatologist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 18, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 240,
+    "commentCount": 31,
+    "routineStep": "Step 1: AM/PM Facial Wash",
+    "frequency": "Twice Daily",
+    "amountToUse": "1 pump",
+    "targetSkinGoal": "Purified Skin Without Chemical Allergens",
+    "skinTypes": [
+      "Allergy-Prone",
+      "Contact Dermatitis",
+      "Acne-Prone",
+      "Sensitive"
+    ],
+    "keyIngredients": [
+      "Purified Water",
+      "Glycerin",
+      "Coco-Glucoside"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Lather in Hands with Water",
+        "desc": "Creates a light, non-aggressive cloud of foam."
+      },
+      {
+        "step": "Step 2: Cleanse and Rinse",
+        "desc": "Rinses completely clean without leaving behind greasy residue."
+      }
+    ],
+    "skinBenefits": [
+      "Removes excess sebum and sunscreen without disrupting stratum corneum",
+      "Zero irritant contact dermatitis risk"
+    ],
+    "pros": [
+      "Rated 100/100 on skin safety indexes",
+      "Excellent value for everyday use"
+    ],
+    "cons": [
+      "Simple no-frills bottle aesthetic"
+    ],
+    "verdict": "The safest cleanser choice when your skin is in crisis or reacting unpredictably to active skincare.",
+    "fullContent": {
+      "intro": "Vanicream Gentle Facial Cleanser: Pure Formula for Allergy-Prone Skin is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Vanicream's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Vanicream Gentle Facial Cleanser: Pure Formula for Allergy-Prone Skin offers an evidence-based approach to purified skin without chemical allergens, utilizing Purified Water and Glycerin.",
+      "ingredientsBreakdown": "Key active components include Purified Water, Glycerin, Coco-Glucoside, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Allergy-Prone, Contact Dermatitis, Acne-Prone, Sensitive looking to achieve purified skin without chemical allergens.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Lather in Hands with Water; Step 2: Cleanse and Rinse.",
+      "finalVerdict": "The safest cleanser choice when your skin is in crisis or reacting unpredictably to active skincare."
+    }
+  },
+  {
+    "id": "c-5",
+    "slug": "youth-to-the-people-superfood-cleanser",
+    "badge": "Antioxidant Wash",
+    "rank": "#5",
+    "categoryTag": "SUPERFOOD FOAM",
+    "category": "Cleansers",
+    "brand": "Youth to the People",
+    "title": "Youth to the People Superfood Cleanser: Cold-Pressed Daily Detox",
+    "subtitle": "Kale, spinach, and green tea packed into a refreshing daily gel cleanser for radiant pores.",
+    "excerpt": "A rich gel cleanser loaded with cold-pressed superfood antioxidants that deeply cleanses pores, removes light makeup, and balances pH without stripping surface moisture...",
+    "image": "/images/cleanser_bottle.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 15, 2025",
+    "readTime": "5 min read",
+    "rating": 4.7,
+    "reviewCount": 180,
+    "commentCount": 29,
+    "routineStep": "Step 1: Daily Refresh Wash",
+    "frequency": "Morning & Night",
+    "amountToUse": "1 to 2 pumps",
+    "targetSkinGoal": "Decongest Pores & Neutralize Urban Pollution",
+    "skinTypes": [
+      "Combination",
+      "Oily",
+      "Normal",
+      "City Dwellers"
+    ],
+    "keyIngredients": [
+      "Kale Extract",
+      "Spinach Leaf Extract",
+      "Green Tea Polyphenols",
+      "Panthenol"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Work into Wet Hands",
+        "desc": "Lather for 30 seconds until a fine green foam develops."
+      },
+      {
+        "step": "Step 2: Focus on T-Zone",
+        "desc": "Massage over congested nose and chin pores before rinsing."
+      }
+    ],
+    "skinBenefits": [
+      "Washes away daily urban soot and microscopic airborne particulate matter",
+      "Energizes dull morning skin tone"
+    ],
+    "pros": [
+      "Luxurious sensory experience and recyclable glass bottle",
+      "Cleanses thoroughly without dryness"
+    ],
+    "cons": [
+      "Higher investment than basic drugstore cleansers"
+    ],
+    "verdict": "A fresh, energizing antioxidant cleanser that makes washing your face feel like a luxury spa experience.",
+    "fullContent": {
+      "intro": "Youth to the People Superfood Cleanser: Cold-Pressed Daily Detox is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Youth to the People's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Youth to the People Superfood Cleanser: Cold-Pressed Daily Detox offers an evidence-based approach to decongest pores & neutralize urban pollution, utilizing Kale Extract and Spinach Leaf Extract.",
+      "ingredientsBreakdown": "Key active components include Kale Extract, Spinach Leaf Extract, Green Tea Polyphenols, Panthenol, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Combination, Oily, Normal, City Dwellers looking to achieve decongest pores & neutralize urban pollution.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Work into Wet Hands; Step 2: Focus on T-Zone.",
+      "finalVerdict": "A fresh, energizing antioxidant cleanser that makes washing your face feel like a luxury spa experience."
+    }
+  },
+  {
+    "id": "c-6",
+    "slug": "paulas-choice-salicylic-cleanser",
+    "badge": "Blemish Defense",
+    "rank": "#6",
+    "categoryTag": "BHA PORE CARE",
+    "category": "Cleansers",
+    "brand": "Paula's Choice",
+    "title": "Paula's Choice CLEAR Pore Normalizing Cleanser: Dissolving Blackheads",
+    "subtitle": "How 0.5% salicylic acid clears congested sebum inside pores without drying out cheeks.",
+    "excerpt": "Unlike harsh acne scrubs that cause micro-tears, this silky gel dissolves trapped oils and dead skin cells inside the pore lining while keeping the skin barrier calm and hydrated...",
+    "image": "/images/cleanser_bottle.jpg",
+    "author": {
+      "name": "Dr. Michael Chen, MD",
+      "role": "Clinical Dermatology Fellow",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 12, 2025",
+    "readTime": "6 min read",
+    "rating": 4.8,
+    "reviewCount": 165,
+    "commentCount": 24,
+    "routineStep": "Step 1: Blemish-Targeted Wash",
+    "frequency": "Once to Twice Daily",
+    "amountToUse": "Nickel-sized amount",
+    "targetSkinGoal": "Prevent Breakouts & Clear Blackheads",
+    "skinTypes": [
+      "Acne-Prone",
+      "Oily Skin",
+      "Enlarged Pores",
+      "Blackhead-Prone"
+    ],
+    "keyIngredients": [
+      "0.5% Salicylic Acid (BHA)",
+      "Arginine",
+      "Pro-Vitamin B5"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Massage on Wet Skin for 60 Seconds",
+        "desc": "Give the BHA active 60 seconds to penetrate the lipid-rich pore lining."
+      },
+      {
+        "step": "Step 2: Rinse with Cool Water",
+        "desc": "Pat dry and proceed directly to toner or serum."
+      }
+    ],
+    "skinBenefits": [
+      "Dissolves excess sebum and plugs before they oxidize into blackheads",
+      "Calms visible acne redness during cleansing"
+    ],
+    "pros": [
+      "Gentle enough for daily use without peeling",
+      "Non-drying gel texture"
+    ],
+    "cons": [
+      "Sensitive skin should start with once daily in the evening"
+    ],
+    "verdict": "The ideal cleanser for anyone struggling with persistent blackheads and congested chin pores.",
+    "fullContent": {
+      "intro": "Paula's Choice CLEAR Pore Normalizing Cleanser: Dissolving Blackheads is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Paula's Choice's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Paula's Choice CLEAR Pore Normalizing Cleanser: Dissolving Blackheads offers an evidence-based approach to prevent breakouts & clear blackheads, utilizing 0.5% Salicylic Acid (BHA) and Arginine.",
+      "ingredientsBreakdown": "Key active components include 0.5% Salicylic Acid (BHA), Arginine, Pro-Vitamin B5, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Acne-Prone, Oily Skin, Enlarged Pores, Blackhead-Prone looking to achieve prevent breakouts & clear blackheads.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Massage on Wet Skin for 60 Seconds; Step 2: Rinse with Cool Water.",
+      "finalVerdict": "The ideal cleanser for anyone struggling with persistent blackheads and congested chin pores."
+    }
+  },
+  {
+    "id": "c-7",
+    "slug": "krave-matcha-hemp-cleanser",
+    "badge": "Barrier First",
+    "rank": "#7",
+    "categoryTag": "BOUNCY JELLY WASH",
+    "category": "Cleansers",
+    "brand": "KraveBeauty",
+    "title": "KraveBeauty Matcha Hemp Hydrating Cleanser: Antioxidant Jelly Routine",
+    "subtitle": "A bouncy matcha jelly loaded with essential fatty acids that feeds and cushions the epidermis.",
+    "excerpt": "Infused with antioxidant-dense matcha green tea and cold-pressed hemp seed oil, this supple jelly cushions your fingertips as you wash, leaving zero trace of tightness...",
+    "image": "/images/cleanser_bottle.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 10, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 142,
+    "commentCount": 22,
+    "routineStep": "Step 1: Gentle Morning/Night Wash",
+    "frequency": "Daily (AM/PM)",
+    "amountToUse": "Almond-sized dollop",
+    "targetSkinGoal": "Restore Supple Elasticity & Prevent Dehydration",
+    "skinTypes": [
+      "Dehydrated Skin",
+      "Barrier-Impaired",
+      "All Skin Types"
+    ],
+    "keyIngredients": [
+      "Matcha (Camellia Sinensis)",
+      "Hemp Seed Oil",
+      "Vitamin B5",
+      "Sodium PCA"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Warm Between Damp Palms",
+        "desc": "Watch the unique bouncy jelly transform into a velvety micro-lather."
+      },
+      {
+        "step": "Step 2: Glide Over Face",
+        "desc": "Rinse with tepid water for immediately supple skin."
+      }
+    ],
+    "skinBenefits": [
+      "Delivers linoleic and linolenic omega fatty acids directly to the stratum corneum",
+      "Antioxidants protect against environmental dullness"
+    ],
+    "pros": [
+      "Unique bouncy cushion texture",
+      "Naturally colored with pure matcha powder"
+    ],
+    "cons": [
+      "Subtle earthy herbal scent from pure botanical ingredients"
+    ],
+    "verdict": "An editorial favorite for maintaining a dewy, well-hydrated skin canvas straight out of the shower.",
+    "fullContent": {
+      "intro": "KraveBeauty Matcha Hemp Hydrating Cleanser: Antioxidant Jelly Routine is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated KraveBeauty's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "KraveBeauty Matcha Hemp Hydrating Cleanser: Antioxidant Jelly Routine offers an evidence-based approach to restore supple elasticity & prevent dehydration, utilizing Matcha (Camellia Sinensis) and Hemp Seed Oil.",
+      "ingredientsBreakdown": "Key active components include Matcha (Camellia Sinensis), Hemp Seed Oil, Vitamin B5, Sodium PCA, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Dehydrated Skin, Barrier-Impaired, All Skin Types looking to achieve restore supple elasticity & prevent dehydration.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Warm Between Damp Palms; Step 2: Glide Over Face.",
+      "finalVerdict": "An editorial favorite for maintaining a dewy, well-hydrated skin canvas straight out of the shower."
+    }
+  },
+  {
+    "id": "c-8",
+    "slug": "aveeno-calm-restore-oat-cleanser",
+    "badge": "Colloidal Oat Pick",
+    "rank": "#8",
+    "categoryTag": "OAT NOURISHMENT",
+    "category": "Cleansers",
+    "brand": "Aveeno",
+    "title": "Aveeno Calm + Restore Oat Cleanser: Soothing Tight Skin with Feverfew",
+    "subtitle": "Nourishing oat gel that melts away daily grime while comforting stressed, burning skin.",
+    "excerpt": "Combining prebiotic oat and calming feverfew, this silky gel cleanser soothes irritation instantly on contact, strengthening the skin’s moisture barrier during every single wash...",
+    "image": "/images/cleanser_bottle.jpg",
+    "author": {
+      "name": "Dr. Rachel Adams, MD",
+      "role": "Board-Certified Dermatologist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 08, 2025",
+    "readTime": "4 min read",
+    "rating": 4.7,
+    "reviewCount": 188,
+    "commentCount": 26,
+    "routineStep": "Step 1: Calming Cleanse",
+    "frequency": "Morning & Evening",
+    "amountToUse": "1 to 2 pumps",
+    "targetSkinGoal": "Comfort Itching & Alleviate Stinging",
+    "skinTypes": [
+      "Sensitive",
+      "Reactive",
+      "Winter-Parched Skin"
+    ],
+    "keyIngredients": [
+      "Prebiotic Oat Extract",
+      "Colloidal Oatmeal",
+      "Calming Feverfew"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Smooth over Damp Face",
+        "desc": "Massage in light upward circles."
+      },
+      {
+        "step": "Step 2: Rinse with Tepid Water",
+        "desc": "Notice immediate softness and zero redness."
+      }
+    ],
+    "skinBenefits": [
+      "Oat avenanthramides block histamine pathways that cause skin itching",
+      "Preserves vital moisture balance in cold climates"
+    ],
+    "pros": [
+      "Very affordable pharmacy staple",
+      "Fragrance-free and non-comedogenic"
+    ],
+    "cons": [
+      "Not intended to remove heavy theatrical makeup on its own"
+    ],
+    "verdict": "The ultimate drugstore rescue cleanser for wind-burned, itchy, or winter-parched complexions.",
+    "fullContent": {
+      "intro": "Aveeno Calm + Restore Oat Cleanser: Soothing Tight Skin with Feverfew is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Aveeno's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Aveeno Calm + Restore Oat Cleanser: Soothing Tight Skin with Feverfew offers an evidence-based approach to comfort itching & alleviate stinging, utilizing Prebiotic Oat Extract and Colloidal Oatmeal.",
+      "ingredientsBreakdown": "Key active components include Prebiotic Oat Extract, Colloidal Oatmeal, Calming Feverfew, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Sensitive, Reactive, Winter-Parched Skin looking to achieve comfort itching & alleviate stinging.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Smooth over Damp Face; Step 2: Rinse with Tepid Water.",
+      "finalVerdict": "The ultimate drugstore rescue cleanser for wind-burned, itchy, or winter-parched complexions."
+    }
+  },
+  {
+    "id": "c-9",
+    "slug": "first-aid-beauty-pure-skin-cleanser",
+    "badge": "Whipped Cleanse",
+    "rank": "#9",
+    "categoryTag": "BOTANICAL CALM",
+    "category": "Cleansers",
+    "brand": "First Aid Beauty",
+    "title": "First Aid Beauty Pure Skin Face Cleanser: pH-Balanced Whipped Cream Wash",
+    "subtitle": "Transformative cream-to-foam texture infused with white tea and licorice root.",
+    "excerpt": "This sulfate-free whipped cleanser effortlessly dissolves makeup, dirt, and daily oil. When blended with water, it transforms into an airy foam that leaves skin calm and balanced...",
+    "image": "/images/cleanser_bottle.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 05, 2025",
+    "readTime": "5 min read",
+    "rating": 4.7,
+    "reviewCount": 154,
+    "commentCount": 20,
+    "routineStep": "Step 1: Makeup-Dissolving Wash",
+    "frequency": "Daily (PM preferred)",
+    "amountToUse": "Pea-sized amount",
+    "targetSkinGoal": "Remove Daily Makeup Without Stripping Lipids",
+    "skinTypes": [
+      "Normal",
+      "Combination",
+      "Sensitive"
+    ],
+    "keyIngredients": [
+      "FAB Antioxidant Booster (Licorice Root, Feverfew, White Tea)",
+      "Aloe Vera",
+      "Allantoin"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Dampen Face with Warm Water",
+        "desc": "Dispense a small amount onto damp fingertips."
+      },
+      {
+        "step": "Step 2: Massage into Rich Foam",
+        "desc": "Gently circle around face and neck, then rinse."
+      }
+    ],
+    "skinBenefits": [
+      "Antioxidant botanical blend neutralizes free radical exposure",
+      "Leaves skin remarkably smooth and primed for toners"
+    ],
+    "pros": [
+      "Concentrated formula lasts months",
+      "Safe for sensitive and eczema-prone skin"
+    ],
+    "cons": [
+      "Needs thorough rinsing to ensure all rich foam is removed"
+    ],
+    "verdict": "A versatile everyday cream wash that effectively removes daytime grime without drying out your skin.",
+    "fullContent": {
+      "intro": "First Aid Beauty Pure Skin Face Cleanser: pH-Balanced Whipped Cream Wash is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated First Aid Beauty's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "First Aid Beauty Pure Skin Face Cleanser: pH-Balanced Whipped Cream Wash offers an evidence-based approach to remove daily makeup without stripping lipids, utilizing FAB Antioxidant Booster (Licorice Root, Feverfew, White Tea) and Aloe Vera.",
+      "ingredientsBreakdown": "Key active components include FAB Antioxidant Booster (Licorice Root, Feverfew, White Tea), Aloe Vera, Allantoin, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Normal, Combination, Sensitive looking to achieve remove daily makeup without stripping lipids.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Dampen Face with Warm Water; Step 2: Massage into Rich Foam.",
+      "finalVerdict": "A versatile everyday cream wash that effectively removes daytime grime without drying out your skin."
+    }
+  },
+  {
+    "id": "c-10",
+    "slug": "fresh-soy-face-cleanser",
+    "badge": "Luxury Cult Classic",
+    "rank": "#10",
+    "categoryTag": "AMINO ACID WASH",
+    "category": "Cleansers",
+    "brand": "Fresh",
+    "title": "Fresh Soy Face Cleanser: Amino Acid Cleansing for Radiant Bounce",
+    "subtitle": "Soy proteins and rosewater combined in a multi-award winning pH-balanced soothing gel.",
+    "excerpt": "Formulated with upcycled soy proteins, cooling cucumber extract, and calming rosewater, this iconic gel cleanser melts away eye makeup and daily grime while maintaining skin elasticity...",
+    "image": "/images/cleanser_bottle.jpg",
+    "author": {
+      "name": "Dr. Michael Chen, MD",
+      "role": "Clinical Dermatology Fellow",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 02, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 215,
+    "commentCount": 33,
+    "routineStep": "Step 1: Luxurious Daily Cleanse",
+    "frequency": "Twice Daily",
+    "amountToUse": "Dime-sized amount",
+    "targetSkinGoal": "Improve Elasticity & Cleanse Eye Contours",
+    "skinTypes": [
+      "All Skin Types",
+      "Mature Skin",
+      "Tired Skin"
+    ],
+    "keyIngredients": [
+      "Soy Amino Acids",
+      "Cucumber Fruit Extract",
+      "Rosewater",
+      "Borage Seed Oil"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Apply to Damp Face and Eyes",
+        "desc": "Safe for direct use across closed eyelids to melt mascara."
+      },
+      {
+        "step": "Step 2: Rinse with Warm Water",
+        "desc": "Pat dry for instantly refreshed, silky skin."
+      }
+    ],
+    "skinBenefits": [
+      "Amino acids help maintain natural epidermal bounce and flexibility",
+      "Rosewater and cucumber immediately reduce puffiness"
+    ],
+    "pros": [
+      "Ophthalmologist tested and safe around delicate eyes",
+      "Leaves a dewy glow after cleansing"
+    ],
+    "cons": [
+      "Fresh natural cucumber aroma is noticeable (though fragrance-free)"
+    ],
+    "verdict": "The ultimate gentle luxury cleanser that melts eye makeup without a hint of stinging or blurred vision.",
+    "fullContent": {
+      "intro": "Fresh Soy Face Cleanser: Amino Acid Cleansing for Radiant Bounce is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Fresh's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Fresh Soy Face Cleanser: Amino Acid Cleansing for Radiant Bounce offers an evidence-based approach to improve elasticity & cleanse eye contours, utilizing Soy Amino Acids and Cucumber Fruit Extract.",
+      "ingredientsBreakdown": "Key active components include Soy Amino Acids, Cucumber Fruit Extract, Rosewater, Borage Seed Oil, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for All Skin Types, Mature Skin, Tired Skin looking to achieve improve elasticity & cleanse eye contours.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Apply to Damp Face and Eyes; Step 2: Rinse with Warm Water.",
+      "finalVerdict": "The ultimate gentle luxury cleanser that melts eye makeup without a hint of stinging or blurred vision."
+    }
+  },
+  {
+    "id": "m-1",
+    "slug": "cerave-moisturizing-cream-review",
+    "badge": "Barrier Champion",
+    "rank": "#1",
+    "categoryTag": "BARRIER HYDRATION GUIDE",
+    "category": "Moisturizers",
+    "brand": "CeraVe",
+    "title": "CeraVe Moisturizing Cream: Barrier Repair & How to Lock in Hydration",
+    "subtitle": "Step-by-step guide on how to heal a damaged skin barrier and get plump, flake-free skin using essential ceramides.",
+    "excerpt": "Developed with dermatologists, this barrier-restoring cream uses 3 essential ceramides and MVE delivery technology to replenish hydration and protect your skin against irritation...",
+    "image": "/images/ceramide_cream.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 24, 2025",
+    "readTime": "5 min read",
+    "rating": 4.9,
+    "reviewCount": 220,
+    "commentCount": 45,
+    "routineStep": "Step 4: Lock-In Moisturizer",
+    "frequency": "Morning & Night (AM/PM)",
+    "amountToUse": "Nickel-sized amount",
+    "targetSkinGoal": "Repair Damaged Barrier & Prevent Transepidermal Water Loss",
+    "skinTypes": [
+      "Dry Skin",
+      "Dehydrated Complexion",
+      "Sensitized Skin",
+      "Post-Retinol Barrier"
+    ],
+    "keyIngredients": [
+      "Ceramides NP, AP, EOP",
+      "Hyaluronic Acid",
+      "Cholesterol",
+      "Phytosphingosine"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Apply on Slightly Damp Skin",
+        "desc": "Apply right after your hydrating toner or serum to trap water inside the skin cells."
+      },
+      {
+        "step": "Step 2: Warm Between Fingers",
+        "desc": "Gently press into cheeks, forehead, and neck rather than aggressively rubbing."
+      },
+      {
+        "step": "Step 3: Allow 3 Minutes Before SPF",
+        "desc": "Let the rich lipids settle into the epidermis before applying sunscreen or makeup."
+      }
+    ],
+    "skinBenefits": [
+      "Restores the missing lipid mortar between skin cells to block out external irritants",
+      "Provides 24-hour continuous hydration release via patented MVE micro-vesicle technology",
+      "Eliminates flaking, roughness, and tightness from active retinol use"
+    ],
+    "pros": [
+      "Non-greasy matte finish despite intensive rich moisture",
+      "Fragrance-free and hypoallergenic",
+      "Accepted by the National Eczema Association"
+    ],
+    "cons": [
+      "Can feel too rich for very oily T-zones during hot humid summers"
+    ],
+    "verdict": "The undisputed gold standard for repairing damaged, over-exfoliated skin barriers. Every skincare routine benefits from having this on hand.",
+    "fullContent": {
+      "intro": "CeraVe Moisturizing Cream: Barrier Repair & How to Lock in Hydration is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated CeraVe's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "CeraVe Moisturizing Cream: Barrier Repair & How to Lock in Hydration offers an evidence-based approach to repair damaged barrier & prevent transepidermal water loss, utilizing Ceramides NP, AP, EOP and Hyaluronic Acid.",
+      "ingredientsBreakdown": "Key active components include Ceramides NP, AP, EOP, Hyaluronic Acid, Cholesterol, Phytosphingosine, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Dry Skin, Dehydrated Complexion, Sensitized Skin, Post-Retinol Barrier looking to achieve repair damaged barrier & prevent transepidermal water loss.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Apply on Slightly Damp Skin; Step 2: Warm Between Fingers; Step 3: Allow 3 Minutes Before SPF.",
+      "finalVerdict": "The undisputed gold standard for repairing damaged, over-exfoliated skin barriers. Every skincare routine benefits from having this on hand."
+    }
+  },
+  {
+    "id": "m-2",
+    "slug": "la-roche-posay-cicaplast-baume-b5",
+    "badge": "Clinical SOS Balm",
+    "rank": "#2",
+    "categoryTag": "SOS BARRIER BALM",
+    "category": "Moisturizers",
+    "brand": "La Roche-Posay",
+    "title": "La Roche-Posay Cicaplast Baume B5+: Healing Irritated & Stinging Skin",
+    "subtitle": "How 5% Panthenol and Madecassoside rescue cracked, compromised, and over-exfoliated barriers.",
+    "excerpt": "An intensive soothing multi-purpose balm enriched with 5% vitamin B5 (Panthenol) and Madecassoside that accelerates epidermal repair and relieves burning sensations...",
+    "image": "/images/ceramide_cream.jpg",
+    "author": {
+      "name": "Dr. Rachel Adams, MD",
+      "role": "Board-Certified Dermatologist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 20, 2025",
+    "readTime": "6 min read",
+    "rating": 4.9,
+    "reviewCount": 340,
+    "commentCount": 52,
+    "routineStep": "Step 4: Night Recovery Seal",
+    "frequency": "As Needed (Night or SOS)",
+    "amountToUse": "Pea-sized amount",
+    "targetSkinGoal": "Instant Relief from Burning, Peeling & Windburn",
+    "skinTypes": [
+      "Over-Exfoliated",
+      "Eczema Flares",
+      "Post-Peel",
+      "Severely Chapped"
+    ],
+    "keyIngredients": [
+      "5% Panthenol (Vitamin B5)",
+      "Madecassoside (Centella Asiatica)",
+      "Copper-Zinc-Manganese",
+      "Shea Butter"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Cleanse with Plain Water",
+        "desc": "Pat skin dry gently without friction."
+      },
+      {
+        "step": "Step 2: Slather Over Red Areas",
+        "desc": "Apply a targeted layer to patches of redness, peeling, or stinging."
+      },
+      {
+        "step": "Step 3: Leave as Night Protective Shield",
+        "desc": "Acts as a semi-occlusive protective film that prevents nighttime moisture loss."
+      }
+    ],
+    "skinBenefits": [
+      "Accelerates skin barrier repair speed within 48 hours",
+      "Copper-Zinc-Manganese complex inhibits bacterial proliferation on broken skin",
+      "Provides instant anti-itch and cooling relief"
+    ],
+    "pros": [
+      "Works miracles on retinol burns and wind-chapped cheeks",
+      "Safe for infants, children, and adults"
+    ],
+    "cons": [
+      "Leaves a temporary white protective cast until absorbed"
+    ],
+    "verdict": "The ultimate emergency room balm for skincare lovers. If you overdo acids or retinol, this brings your barrier back overnight.",
+    "fullContent": {
+      "intro": "La Roche-Posay Cicaplast Baume B5+: Healing Irritated & Stinging Skin is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated La Roche-Posay's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "La Roche-Posay Cicaplast Baume B5+: Healing Irritated & Stinging Skin offers an evidence-based approach to instant relief from burning, peeling & windburn, utilizing 5% Panthenol (Vitamin B5) and Madecassoside (Centella Asiatica).",
+      "ingredientsBreakdown": "Key active components include 5% Panthenol (Vitamin B5), Madecassoside (Centella Asiatica), Copper-Zinc-Manganese, Shea Butter, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Over-Exfoliated, Eczema Flares, Post-Peel, Severely Chapped looking to achieve instant relief from burning, peeling & windburn.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Cleanse with Plain Water; Step 2: Slather Over Red Areas; Step 3: Leave as Night Protective Shield.",
+      "finalVerdict": "The ultimate emergency room balm for skincare lovers. If you overdo acids or retinol, this brings your barrier back overnight."
+    }
+  },
+  {
+    "id": "m-3",
+    "slug": "first-aid-beauty-ultra-repair-cream",
+    "badge": "Eczema Relief",
+    "rank": "#3",
+    "categoryTag": "COLLOIDAL OAT CREAM",
+    "category": "Moisturizers",
+    "brand": "First Aid Beauty",
+    "title": "First Aid Beauty Ultra Repair Cream: Whipped Hydration for Sensitive Skin",
+    "subtitle": "Colloidal oatmeal and shea butter whipped into a fast-absorbing barrier hydrator.",
+    "excerpt": "Clinically proven to immediately increase skin hydration by 169%, this whipped cream soothes red, itchy, distressed skin without leaving behind a heavy greasy residue...",
+    "image": "/images/ceramide_cream.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 18, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 198,
+    "commentCount": 30,
+    "routineStep": "Step 4: Daily Hydration Cream",
+    "frequency": "Morning & Night",
+    "amountToUse": "Dime-sized amount",
+    "targetSkinGoal": "Relieve Dry Itching & Fortify Fragile Skin",
+    "skinTypes": [
+      "Sensitive",
+      "Dry",
+      "Flaking Skin",
+      "Allergy-Prone"
+    ],
+    "keyIngredients": [
+      "Colloidal Oatmeal",
+      "Shea Butter",
+      "Allantoin",
+      "Ceramides"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Smooth over Clean Face",
+        "desc": "Massage in light upward strokes."
+      },
+      {
+        "step": "Step 2: Allow 60 Seconds to Sink In",
+        "desc": "Dries to a smooth, velvety finish suitable under makeup."
+      }
+    ],
+    "skinBenefits": [
+      "Soothes minor skin irritation and itching due to eczema or dry weather",
+      "Delivers deep long-lasting hydration without clogging pores"
+    ],
+    "pros": [
+      "Absorbs rapidly despite intense nourishing power",
+      "Versatile for face, neck, and dry hands"
+    ],
+    "cons": [
+      "Contains eucalyptus oil which rare ultra-reactive skin types might find cooling"
+    ],
+    "verdict": "A fail-safe daily moisturizer for anyone dealing with dry flakes and rough winter texture.",
+    "fullContent": {
+      "intro": "First Aid Beauty Ultra Repair Cream: Whipped Hydration for Sensitive Skin is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated First Aid Beauty's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "First Aid Beauty Ultra Repair Cream: Whipped Hydration for Sensitive Skin offers an evidence-based approach to relieve dry itching & fortify fragile skin, utilizing Colloidal Oatmeal and Shea Butter.",
+      "ingredientsBreakdown": "Key active components include Colloidal Oatmeal, Shea Butter, Allantoin, Ceramides, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Sensitive, Dry, Flaking Skin, Allergy-Prone looking to achieve relieve dry itching & fortify fragile skin.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Smooth over Clean Face; Step 2: Allow 60 Seconds to Sink In.",
+      "finalVerdict": "A fail-safe daily moisturizer for anyone dealing with dry flakes and rough winter texture."
+    }
+  },
+  {
+    "id": "m-4",
+    "slug": "kiehls-ultra-facial-cream-review",
+    "badge": "All-Climate Hydrator",
+    "rank": "#4",
+    "categoryTag": "GLACIAL GLYCOPROTEIN",
+    "category": "Moisturizers",
+    "brand": "Kiehl's",
+    "title": "Kiehl's Ultra Facial Cream: 24-Hour Moisture Tested in Extreme Climates",
+    "subtitle": "How olive-derived squalane and Antarctic glycoproteins maintain barrier resilience in sub-zero cold.",
+    "excerpt": "An ultra-lightweight daily cream with squalane and glacial glycoprotein that doubles skin hydration even in dry heated rooms or freezing winds, without feeling heavy...",
+    "image": "/images/ceramide_cream.jpg",
+    "author": {
+      "name": "Dr. Michael Chen, MD",
+      "role": "Clinical Dermatology Fellow",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 16, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 210,
+    "commentCount": 34,
+    "routineStep": "Step 4: Morning & Evening Hydration",
+    "frequency": "Daily (AM/PM)",
+    "amountToUse": "Pea-sized amount",
+    "targetSkinGoal": "Continuous 24-Hour Skin Softness",
+    "skinTypes": [
+      "All Skin Types",
+      "Normal",
+      "Dry",
+      "Combination"
+    ],
+    "keyIngredients": [
+      "Squalane",
+      "Glacial Glycoprotein",
+      "Glycerin"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Dot on Cheeks and Forehead",
+        "desc": "Glides across the skin with silky slip."
+      },
+      {
+        "step": "Step 2: Press In Gently",
+        "desc": "Absorbs instantly without shine."
+      }
+    ],
+    "skinBenefits": [
+      "Maintains skin water levels across both desert heat and arctic chill",
+      "Strengthens moisture barrier by 47% after 1 hour"
+    ],
+    "pros": [
+      "Feather-light texture under foundation",
+      "Zero greasy residue on the T-zone"
+    ],
+    "cons": [
+      "Higher price per ounce than pharmacy staples"
+    ],
+    "verdict": "The ideal everyday moisturizer for balanced hydration that feels virtually weightless on skin.",
+    "fullContent": {
+      "intro": "Kiehl's Ultra Facial Cream: 24-Hour Moisture Tested in Extreme Climates is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Kiehl's's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Kiehl's Ultra Facial Cream: 24-Hour Moisture Tested in Extreme Climates offers an evidence-based approach to continuous 24-hour skin softness, utilizing Squalane and Glacial Glycoprotein.",
+      "ingredientsBreakdown": "Key active components include Squalane, Glacial Glycoprotein, Glycerin, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for All Skin Types, Normal, Dry, Combination looking to achieve continuous 24-hour skin softness.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Dot on Cheeks and Forehead; Step 2: Press In Gently.",
+      "finalVerdict": "The ideal everyday moisturizer for balanced hydration that feels virtually weightless on skin."
+    }
+  },
+  {
+    "id": "m-5",
+    "slug": "dieux-air-angel-gel-cream",
+    "badge": "Modern Formulation",
+    "rank": "#5",
+    "categoryTag": "LIPID-RICH GEL",
+    "category": "Moisturizers",
+    "brand": "Dieux",
+    "title": "Dieux Air Angel: The Breakthrough Barrier Gel Cream for Clogged Pores",
+    "subtitle": "Clinical barrier replenishment without heavy occlusives or pore-congesting waxes.",
+    "excerpt": "Formulated for those who need intensive barrier repair but break out from heavy creams. Air Angel delivers ceramide precursors and amino acids in a cushiony water-gel...",
+    "image": "/images/ceramide_cream.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 14, 2025",
+    "readTime": "6 min read",
+    "rating": 4.8,
+    "reviewCount": 165,
+    "commentCount": 26,
+    "routineStep": "Step 4: Lightweight Barrier Gel",
+    "frequency": "Twice Daily",
+    "amountToUse": "1 pump",
+    "targetSkinGoal": "Barrier Support Without Congestion",
+    "skinTypes": [
+      "Acne-Prone",
+      "Oily/Combination",
+      "Dehydrated Skin"
+    ],
+    "keyIngredients": [
+      "Ceramide Complex",
+      "Urea",
+      "Amino Acids",
+      "Glycerin"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Smooth Over Face and Neck",
+        "desc": "Provides instant dewy skin radiance."
+      },
+      {
+        "step": "Step 2: Layer Freely",
+        "desc": "Plays well with active retinoids and acids without pilling."
+      }
+    ],
+    "skinBenefits": [
+      "Mimics natural skin lipids without adding pore-clogging heavy oils",
+      "Urea provides gentle natural cellular hydration"
+    ],
+    "pros": [
+      "Stunning airy texture that leaves a satin glow",
+      "Airtight hygienic pump dispenser"
+    ],
+    "cons": [
+      "Very dry winter skin may prefer a heavier balm at night"
+    ],
+    "verdict": "A modern marvel for anyone who breaks out from traditional ceramide creams.",
+    "fullContent": {
+      "intro": "Dieux Air Angel: The Breakthrough Barrier Gel Cream for Clogged Pores is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Dieux's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Dieux Air Angel: The Breakthrough Barrier Gel Cream for Clogged Pores offers an evidence-based approach to barrier support without congestion, utilizing Ceramide Complex and Urea.",
+      "ingredientsBreakdown": "Key active components include Ceramide Complex, Urea, Amino Acids, Glycerin, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Acne-Prone, Oily/Combination, Dehydrated Skin looking to achieve barrier support without congestion.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Smooth Over Face and Neck; Step 2: Layer Freely.",
+      "finalVerdict": "A modern marvel for anyone who breaks out from traditional ceramide creams."
+    }
+  },
+  {
+    "id": "m-6",
+    "slug": "skinfix-triple-lipid-peptide-cream",
+    "badge": "Peptide Power",
+    "rank": "#6",
+    "categoryTag": "LIPID & PEPTIDE REPAIR",
+    "category": "Moisturizers",
+    "brand": "Skinfix",
+    "title": "Skinfix Barrier+ Triple Lipid-Peptide Cream: Clinical Plump & Density",
+    "subtitle": "Proven to restore essential skin lipids by up to 212% for visibly firmer, bouncy skin.",
+    "excerpt": "A dermatologist-tested rich cream packed with active peptides, vegetable ceramides, and jojoba sterols to replenish depleted lipid barriers and restore skin volume...",
+    "image": "/images/ceramide_cream.jpg",
+    "author": {
+      "name": "Dr. Rachel Adams, MD",
+      "role": "Board-Certified Dermatologist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 11, 2025",
+    "readTime": "5 min read",
+    "rating": 4.9,
+    "reviewCount": 275,
+    "commentCount": 40,
+    "routineStep": "Step 4: Intensive Firming Cream",
+    "frequency": "Morning & Night",
+    "amountToUse": "1 press of the airless jar",
+    "targetSkinGoal": "Restore Elasticity & Replenish Depleted Lipids",
+    "skinTypes": [
+      "Mature Skin",
+      "Very Dry",
+      "Loss of Firmness"
+    ],
+    "keyIngredients": [
+      "Triple Lipid Complex (Ceramides, Fatty Acids, Cholesterol)",
+      "Nutripeptide Blend",
+      "Seaweed Hyaluronate"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Press Airless Jar for One Dose",
+        "desc": "Dispenses the exact hygienic measurement."
+      },
+      {
+        "step": "Step 2: Press Firmly into Face and Neck",
+        "desc": "Smooth in upward motions toward temples."
+      }
+    ],
+    "skinBenefits": [
+      "Restores essential barrier lipids lost during chronological aging",
+      "Peptides support natural dermal collagen firming"
+    ],
+    "pros": [
+      "Clinically proven to double lipid volume",
+      "Refillable eco-friendly jar packaging"
+    ],
+    "cons": [
+      "Rich texture best suited for dry or mature skin types"
+    ],
+    "verdict": "An exceptional high-performance cream that visibly plumps fine dehydration lines within days.",
+    "fullContent": {
+      "intro": "Skinfix Barrier+ Triple Lipid-Peptide Cream: Clinical Plump & Density is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Skinfix's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Skinfix Barrier+ Triple Lipid-Peptide Cream: Clinical Plump & Density offers an evidence-based approach to restore elasticity & replenish depleted lipids, utilizing Triple Lipid Complex (Ceramides, Fatty Acids, Cholesterol) and Nutripeptide Blend.",
+      "ingredientsBreakdown": "Key active components include Triple Lipid Complex (Ceramides, Fatty Acids, Cholesterol), Nutripeptide Blend, Seaweed Hyaluronate, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Mature Skin, Very Dry, Loss of Firmness looking to achieve restore elasticity & replenish depleted lipids.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Press Airless Jar for One Dose; Step 2: Press Firmly into Face and Neck.",
+      "finalVerdict": "An exceptional high-performance cream that visibly plumps fine dehydration lines within days."
+    }
+  },
+  {
+    "id": "m-7",
+    "slug": "avene-cicalfate-restorative-cream",
+    "badge": "Post-Procedure Calm",
+    "rank": "#7",
+    "categoryTag": "COPPER-ZINC PROTECTION",
+    "category": "Moisturizers",
+    "brand": "Avene",
+    "title": "Avene Cicalfate+ Restorative Cream: The Post-Procedure Shield",
+    "subtitle": "Postbiotic restorative cream formulated with thermal spring water and copper-zinc sulfate.",
+    "excerpt": "Developed to optimize skin recovery after clinical treatments, this rich protective cream creates an optimal healing environment, calming burning sensations and preventing scars...",
+    "image": "/images/ceramide_cream.jpg",
+    "author": {
+      "name": "Dr. Michael Chen, MD",
+      "role": "Clinical Dermatology Fellow",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 09, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 190,
+    "commentCount": 28,
+    "routineStep": "Step 4: Protective Recovery Seal",
+    "frequency": "Morning & Evening",
+    "amountToUse": "Small pearl amount",
+    "targetSkinGoal": "Accelerate Skin Healing & Soothe Burning",
+    "skinTypes": [
+      "Post-Laser",
+      "Post-Chemical Peel",
+      "Cracked Skin",
+      "Raw Barriers"
+    ],
+    "keyIngredients": [
+      "C+ Restore (Patented Postbiotic)",
+      "Copper Sulfate",
+      "Zinc Sulfate",
+      "Avene Thermal Spring Water"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Warm Between Fingertips",
+        "desc": "Allows the rich protective paste to spread effortlessly."
+      },
+      {
+        "step": "Step 2: Gently Press onto Affected Areas",
+        "desc": "Do not drag or pull sensitized skin."
+      }
+    ],
+    "skinBenefits": [
+      "Accelerates barrier recovery by 4x compared to bare skin",
+      "Prevents secondary bacterial colonization on raw skin patches"
+    ],
+    "pros": [
+      "Dermatologist recommended worldwide after laser peels",
+      "Zero fragrance or alcohol"
+    ],
+    "cons": [
+      "Very thick consistency intended for targeted repair"
+    ],
+    "verdict": "The premier French pharmacy recovery cream for skin recovering from aggressive procedures.",
+    "fullContent": {
+      "intro": "Avene Cicalfate+ Restorative Cream: The Post-Procedure Shield is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Avene's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Avene Cicalfate+ Restorative Cream: The Post-Procedure Shield offers an evidence-based approach to accelerate skin healing & soothe burning, utilizing C+ Restore (Patented Postbiotic) and Copper Sulfate.",
+      "ingredientsBreakdown": "Key active components include C+ Restore (Patented Postbiotic), Copper Sulfate, Zinc Sulfate, Avene Thermal Spring Water, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Post-Laser, Post-Chemical Peel, Cracked Skin, Raw Barriers looking to achieve accelerate skin healing & soothe burning.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Warm Between Fingertips; Step 2: Gently Press onto Affected Areas.",
+      "finalVerdict": "The premier French pharmacy recovery cream for skin recovering from aggressive procedures."
+    }
+  },
+  {
+    "id": "m-8",
+    "slug": "dr-jart-ceramidin-cream",
+    "badge": "5-Ceramide Complex",
+    "rank": "#8",
+    "categoryTag": "5-CERAMIDE COMPLEX",
+    "category": "Moisturizers",
+    "brand": "Dr. Jart+",
+    "title": "Dr. Jart+ Ceramidin Cream: Deep Barrier Cushioning with 5 Ceramides",
+    "subtitle": "The iconic yellow tube packed with 5 types of ceramides to shield against extreme winter dryness.",
+    "excerpt": "A buttery, rich comforting cream formulated with Dr. Jart’s 5-Cera Complex and ectoin that fortifies weak barriers against harsh winds and radiator heating...",
+    "image": "/images/ceramide_cream.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 06, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 235,
+    "commentCount": 38,
+    "routineStep": "Step 4: Winter Comfort Barrier",
+    "frequency": "Morning & Night",
+    "amountToUse": "Almond-sized amount",
+    "targetSkinGoal": "Shield Skin Against Freezing Temperatures & Dry Air",
+    "skinTypes": [
+      "Extremely Dry",
+      "Flaky Skin",
+      "Winter-Parched"
+    ],
+    "keyIngredients": [
+      "5-Ceramide Complex (EOP, DP, NP, AS, AP)",
+      "Ectoin",
+      "Shea Butter",
+      "Panthenol"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Squeeze from Tube",
+        "desc": "Warm between clean hands."
+      },
+      {
+        "step": "Step 2: Smooth over Face and Neck",
+        "desc": "Forms an immediate velvety moisture cocoon."
+      }
+    ],
+    "skinBenefits": [
+      "Ectoin locks water molecules to cell membranes to prevent desiccation",
+      "Delivers continuous comfort that lasts all day"
+    ],
+    "pros": [
+      "Iconic comforting butter texture",
+      "Instantly eliminates rough dry patches"
+    ],
+    "cons": [
+      "Rich formula best suited for cooler months or nighttime"
+    ],
+    "verdict": "Your winter skin armor. Slather this on before stepping into cold weather to prevent windburn and flaking.",
+    "fullContent": {
+      "intro": "Dr. Jart+ Ceramidin Cream: Deep Barrier Cushioning with 5 Ceramides is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Dr. Jart+'s formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Dr. Jart+ Ceramidin Cream: Deep Barrier Cushioning with 5 Ceramides offers an evidence-based approach to shield skin against freezing temperatures & dry air, utilizing 5-Ceramide Complex (EOP, DP, NP, AS, AP) and Ectoin.",
+      "ingredientsBreakdown": "Key active components include 5-Ceramide Complex (EOP, DP, NP, AS, AP), Ectoin, Shea Butter, Panthenol, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Extremely Dry, Flaky Skin, Winter-Parched looking to achieve shield skin against freezing temperatures & dry air.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Squeeze from Tube; Step 2: Smooth over Face and Neck.",
+      "finalVerdict": "Your winter skin armor. Slather this on before stepping into cold weather to prevent windburn and flaking."
+    }
+  },
+  {
+    "id": "m-9",
+    "slug": "neutrogena-hydro-boost-water-gel",
+    "badge": "Lightweight Hydration",
+    "rank": "#9",
+    "categoryTag": "HYALURONIC WATER GEL",
+    "category": "Moisturizers",
+    "brand": "Neutrogena",
+    "title": "Neutrogena Hydro Boost Water Gel: Weightless Hydration for Oily Skin",
+    "subtitle": "Purified hyaluronic acid in a refreshing oil-free gel that absorbs in seconds.",
+    "excerpt": "A fast-absorbing, oil-free water gel that quenches thirsty skin immediately and locks in hydration all day without leaving any shiny or greasy residue...",
+    "image": "/images/ceramide_cream.jpg",
+    "author": {
+      "name": "Dr. Michael Chen, MD",
+      "role": "Clinical Dermatology Fellow",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 03, 2025",
+    "readTime": "4 min read",
+    "rating": 4.7,
+    "reviewCount": 260,
+    "commentCount": 32,
+    "routineStep": "Step 4: Oil-Free Hydration",
+    "frequency": "Morning & Night",
+    "amountToUse": "Dime-sized dollop",
+    "targetSkinGoal": "Oil-Free Skin Quenching Without Clogged Pores",
+    "skinTypes": [
+      "Oily Skin",
+      "Acne-Prone",
+      "Humid Climates"
+    ],
+    "keyIngredients": [
+      "Purified Hyaluronic Acid",
+      "Glycerin",
+      "Dimethicone (Breathable Sealant)"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Scoop and Smooth",
+        "desc": "Glides across the face with a burst of cool water."
+      },
+      {
+        "step": "Step 2: Let Absorb",
+        "desc": "Dries down in 15 seconds to a smooth, shine-free finish."
+      }
+    ],
+    "skinBenefits": [
+      "Quenches dehydrated skin without adding surface oils",
+      "Great canvas for matte makeup wear"
+    ],
+    "pros": [
+      "Affordable drugstore price",
+      "Non-comedogenic and lightweight"
+    ],
+    "cons": [
+      "Dry skin types will need a richer cream over top"
+    ],
+    "verdict": "The ultimate beginner hydrator for oily or combination skin that hates the feel of traditional lotions.",
+    "fullContent": {
+      "intro": "Neutrogena Hydro Boost Water Gel: Weightless Hydration for Oily Skin is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Neutrogena's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Neutrogena Hydro Boost Water Gel: Weightless Hydration for Oily Skin offers an evidence-based approach to oil-free skin quenching without clogged pores, utilizing Purified Hyaluronic Acid and Glycerin.",
+      "ingredientsBreakdown": "Key active components include Purified Hyaluronic Acid, Glycerin, Dimethicone (Breathable Sealant), engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Oily Skin, Acne-Prone, Humid Climates looking to achieve oil-free skin quenching without clogged pores.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Scoop and Smooth; Step 2: Let Absorb.",
+      "finalVerdict": "The ultimate beginner hydrator for oily or combination skin that hates the feel of traditional lotions."
+    }
+  },
+  {
+    "id": "m-10",
+    "slug": "illiyoon-ceramide-ato-cream",
+    "badge": "K-Beauty Cult Favorite",
+    "rank": "#10",
+    "categoryTag": "CERAMIDE CAPSULES",
+    "category": "Moisturizers",
+    "brand": "Illiyoon",
+    "title": "Illiyoon Ceramide Ato Concentrate Cream: Encapsulated Ceramide Beads",
+    "subtitle": "Patented Ceramide Skin Complex beads that burst upon contact to seal compromised skin barriers.",
+    "excerpt": "A viral Korean pharmacy cream featuring microscopic ceramide beads that melt upon application, providing deep hypoallergenic barrier protection without feeling greasy...",
+    "image": "/images/ceramide_cream.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 01, 2025",
+    "readTime": "5 min read",
+    "rating": 4.9,
+    "reviewCount": 310,
+    "commentCount": 46,
+    "routineStep": "Step 4: Night Barrier Seal",
+    "frequency": "Nightly (or twice daily for dry skin)",
+    "amountToUse": "Dime-sized amount",
+    "targetSkinGoal": "Soothe Eczema & Long-Lasting Barrier Seal",
+    "skinTypes": [
+      "Sensitive",
+      "Eczema-Prone",
+      "Compromised Barrier"
+    ],
+    "keyIngredients": [
+      "Ceramide Skin Complex (Encapsulated)",
+      "Panax Ginseng Root Extract",
+      "Soybean Ferment Extract"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Warm Between Palms",
+        "desc": "Feel the microscopic ceramide beads smoothly dissolve."
+      },
+      {
+        "step": "Step 2: Press Evenly Over Face and Body",
+        "desc": "Leaves a velvety matte protective seal."
+      }
+    ],
+    "skinBenefits": [
+      "Micro-capsules ensure deep active penetration into stratum corneum fissures",
+      "Zero stinging even on broken, inflamed skin"
+    ],
+    "pros": [
+      "Massive value size bottle/tube",
+      "Completely fragrance-free and matte finish"
+    ],
+    "cons": [
+      "Needs gentle warmth from fingers to melt beads evenly"
+    ],
+    "verdict": "The best value ceramide cream in global skincare. A staple that outperforms products costing five times as much.",
+    "fullContent": {
+      "intro": "Illiyoon Ceramide Ato Concentrate Cream: Encapsulated Ceramide Beads is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Illiyoon's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Illiyoon Ceramide Ato Concentrate Cream: Encapsulated Ceramide Beads offers an evidence-based approach to soothe eczema & long-lasting barrier seal, utilizing Ceramide Skin Complex (Encapsulated) and Panax Ginseng Root Extract.",
+      "ingredientsBreakdown": "Key active components include Ceramide Skin Complex (Encapsulated), Panax Ginseng Root Extract, Soybean Ferment Extract, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Sensitive, Eczema-Prone, Compromised Barrier looking to achieve soothe eczema & long-lasting barrier seal.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Warm Between Palms; Step 2: Press Evenly Over Face and Body.",
+      "finalVerdict": "The best value ceramide cream in global skincare. A staple that outperforms products costing five times as much."
+    }
+  },
+  {
+    "id": "s-1",
+    "slug": "the-5-best-vitamin-c-serums-for-glowing-skin-in-2025",
+    "badge": "Featured Guide",
+    "rank": "#1",
+    "categoryTag": "SKINCARE ROUTINE GUIDE",
+    "category": "Serums",
+    "brand": "Antioxidant Radiance Guide",
+    "title": "The 5 Best Vitamin C Serums for Glowing Skin: How to Use & Routine Steps",
+    "subtitle": "Learn the exact morning application order, how it repairs hyperpigmentation, and how to maximize your skin glow without irritation.",
+    "excerpt": "Vitamin C serums are one of the most transformative active skincare products for brightening skin tone, fading dark spots, and boosting natural collagen...",
+    "image": "/images/vitamin_c.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 22, 2025",
+    "readTime": "6 min read",
+    "rating": 4.8,
+    "reviewCount": 124,
+    "commentCount": 32,
+    "routineStep": "Step 2: Morning Active Serum",
+    "frequency": "Every Morning (AM)",
+    "amountToUse": "4 to 5 drops",
+    "targetSkinGoal": "Fade Dark Spots & Boost Daily Radiance",
+    "skinTypes": [
+      "All Skin Types",
+      "Hyperpigmentation",
+      "Dull Complexion",
+      "Sun-Damaged Skin"
+    ],
+    "keyIngredients": [
+      "15% L-Ascorbic Acid",
+      "1% Vitamin E (Alpha Tocopherol)",
+      "0.5% Ferulic Acid",
+      "Hyaluronic Acid"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Cleanse with a Gentle Wash",
+        "desc": "Pat completely dry with a clean towel (Vitamin C penetrates best on dry skin)."
+      },
+      {
+        "step": "Step 2: Apply 4–5 Drops",
+        "desc": "Gently press and smooth across forehead, cheeks, and neck."
+      },
+      {
+        "step": "Step 3: Allow 2 Minutes to Absorb",
+        "desc": "Give the active formulation 2 minutes to penetrate before layering thicker creams."
+      },
+      {
+        "step": "Step 4: Seal with Moisturizer & SPF 30+",
+        "desc": "Locks in hydration and shields skin from UV photoaging."
+      }
+    ],
+    "skinBenefits": [
+      "Neutralizes free radicals caused by sunlight, pollution, and blue light",
+      "Inhibits excess melanin synthesis to fade stubborn sun freckles and acne marks",
+      "Stimulates fibroblasts to produce healthy new collagen for plumper skin bounce"
+    ],
+    "pros": [
+      "Clinically proven to fade post-acne marks within 4 to 8 weeks",
+      "Watery lightweight absorption leaves skin feeling clean and fresh"
+    ],
+    "cons": [
+      "Must be stored in a cool, shaded area away from heat to maintain antioxidant potency"
+    ],
+    "verdict": "When used consistently every morning on clean, dry skin followed by SPF, a stabilized Vitamin C serum is the single most effective daytime product for radiant skin.",
+    "fullContent": {
+      "intro": "The 5 Best Vitamin C Serums for Glowing Skin: How to Use & Routine Steps is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Antioxidant Radiance Guide's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "The 5 Best Vitamin C Serums for Glowing Skin: How to Use & Routine Steps offers an evidence-based approach to fade dark spots & boost daily radiance, utilizing 15% L-Ascorbic Acid and 1% Vitamin E (Alpha Tocopherol).",
+      "ingredientsBreakdown": "Key active components include 15% L-Ascorbic Acid, 1% Vitamin E (Alpha Tocopherol), 0.5% Ferulic Acid, Hyaluronic Acid, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for All Skin Types, Hyperpigmentation, Dull Complexion, Sun-Damaged Skin looking to achieve fade dark spots & boost daily radiance.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Cleanse with a Gentle Wash; Step 2: Apply 4–5 Drops; Step 3: Allow 2 Minutes to Absorb; Step 4: Seal with Moisturizer & SPF 30+.",
+      "finalVerdict": "When used consistently every morning on clean, dry skin followed by SPF, a stabilized Vitamin C serum is the single most effective daytime product for radiant skin."
+    }
+  },
+  {
+    "id": "s-2",
+    "slug": "skinceuticals-c-e-ferulic-serum-review",
+    "badge": "Patent Gold Standard",
+    "rank": "#2",
+    "categoryTag": "CLINICAL ANTIOXIDANT",
+    "category": "Serums",
+    "brand": "SkinCeuticals",
+    "title": "SkinCeuticals C E Ferulic: The Patented Gold Standard for Skin Longevity",
+    "subtitle": "The clinical formulation behind the Duke Antioxidant Patent and why stability matters.",
+    "excerpt": "Recognized by dermatologists worldwide, this patented synergy of 15% pure L-ascorbic acid, 1% alpha tocopherol, and 0.5% ferulic acid provides 8x environmental protection...",
+    "image": "/images/vitamin_c.jpg",
+    "author": {
+      "name": "Dr. Rachel Adams, MD",
+      "role": "Board-Certified Dermatologist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 21, 2025",
+    "readTime": "6 min read",
+    "rating": 4.9,
+    "reviewCount": 310,
+    "commentCount": 48,
+    "routineStep": "Step 2: AM Potent Antioxidant",
+    "frequency": "Daily (AM)",
+    "amountToUse": "4 to 5 drops",
+    "targetSkinGoal": "Maximum Photoprotection & Collagen Synthesis",
+    "skinTypes": [
+      "Normal",
+      "Dry",
+      "Mature Skin",
+      "Sun-Exposed Skin"
+    ],
+    "keyIngredients": [
+      "15% L-Ascorbic Acid",
+      "1% Alpha-Tocopherol (Vitamin E)",
+      "0.5% Ferulic Acid"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Apply to Dry Face",
+        "desc": "Press drops directly into skin right after cleansing."
+      },
+      {
+        "step": "Step 2: Let Fully Absorb",
+        "desc": "Remains active in the skin for up to 72 hours once absorbed."
+      }
+    ],
+    "skinBenefits": [
+      "Multiplies skin natural defense against UV and ozone pollution by 8x",
+      "Reduces oxidative damage by up to 41%"
+    ],
+    "pros": [
+      "Backed by dozens of peer-reviewed clinical studies",
+      "Unmatched formulation stability at pH 2.5–3.0"
+    ],
+    "cons": [
+      "High investment luxury skincare price"
+    ],
+    "verdict": "The pinnacle of topical antioxidant science. If your budget allows, nothing protects against photoaging quite like it.",
+    "fullContent": {
+      "intro": "SkinCeuticals C E Ferulic: The Patented Gold Standard for Skin Longevity is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated SkinCeuticals's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "SkinCeuticals C E Ferulic: The Patented Gold Standard for Skin Longevity offers an evidence-based approach to maximum photoprotection & collagen synthesis, utilizing 15% L-Ascorbic Acid and 1% Alpha-Tocopherol (Vitamin E).",
+      "ingredientsBreakdown": "Key active components include 15% L-Ascorbic Acid, 1% Alpha-Tocopherol (Vitamin E), 0.5% Ferulic Acid, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Normal, Dry, Mature Skin, Sun-Exposed Skin looking to achieve maximum photoprotection & collagen synthesis.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Apply to Dry Face; Step 2: Let Fully Absorb.",
+      "finalVerdict": "The pinnacle of topical antioxidant science. If your budget allows, nothing protects against photoaging quite like it."
+    }
+  },
+  {
+    "id": "s-3",
+    "slug": "la-roche-posay-vitamin-c-serum",
+    "badge": "Sensitive Brightening",
+    "rank": "#3",
+    "categoryTag": "BRIGHTENING SERUM",
+    "category": "Serums",
+    "brand": "La Roche-Posay",
+    "title": "La Roche-Posay Pure Vitamin C10: Brightening Without Redness",
+    "subtitle": "How 10% pure vitamin C combined with Salicylic Acid and Neurosensine delivers a smooth glow.",
+    "excerpt": "Formulated specifically for sensitive complexions prone to stinging, this 10% vitamin C serum pairs brightening power with soothing neurosensine and gently exfoliating salicylic acid...",
+    "image": "/images/vitamin_c.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 19, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 187,
+    "commentCount": 29,
+    "routineStep": "Step 2: Morning Active Step",
+    "frequency": "Every Morning",
+    "amountToUse": "3 to 4 drops",
+    "targetSkinGoal": "Refine Skin Texture & Brighten Complexion",
+    "skinTypes": [
+      "Sensitive Skin",
+      "Uneven Texture",
+      "Dull Skin"
+    ],
+    "keyIngredients": [
+      "10% Pure Vitamin C",
+      "Salicylic Acid",
+      "Neurosensine",
+      "Hyaluronic Acid"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Dispense Drops onto Fingertips",
+        "desc": "Smooth gently over face and neck avoiding direct eye contact."
+      },
+      {
+        "step": "Step 2: Follow with Hydrating Moisturizer",
+        "desc": "Buffers the skin barrier for daytime comfort."
+      }
+    ],
+    "skinBenefits": [
+      "Neurosensine actively blocks sensory irritation signals on sensitive skin",
+      "Low-dose salicylic acid refines pore texture simultaneously"
+    ],
+    "pros": [
+      "Gentle enough for skin that cannot tolerate 20% vitamin C formulas",
+      "Silky velvety application"
+    ],
+    "cons": [
+      "Bottle must be capped tightly to prevent oxidation over time"
+    ],
+    "verdict": "The best starter vitamin C serum for anyone with sensitive, easily-flushed skin wanting genuine radiance.",
+    "fullContent": {
+      "intro": "La Roche-Posay Pure Vitamin C10: Brightening Without Redness is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated La Roche-Posay's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "La Roche-Posay Pure Vitamin C10: Brightening Without Redness offers an evidence-based approach to refine skin texture & brighten complexion, utilizing 10% Pure Vitamin C and Salicylic Acid.",
+      "ingredientsBreakdown": "Key active components include 10% Pure Vitamin C, Salicylic Acid, Neurosensine, Hyaluronic Acid, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Sensitive Skin, Uneven Texture, Dull Skin looking to achieve refine skin texture & brighten complexion.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Dispense Drops onto Fingertips; Step 2: Follow with Hydrating Moisturizer.",
+      "finalVerdict": "The best starter vitamin C serum for anyone with sensitive, easily-flushed skin wanting genuine radiance."
+    }
+  },
+  {
+    "id": "s-4",
+    "slug": "the-ordinary-niacinamide-serum",
+    "badge": "Pore Refiner",
+    "rank": "#4",
+    "categoryTag": "SEBUM & PORE CONTROL",
+    "category": "Serums",
+    "brand": "The Ordinary",
+    "title": "The Ordinary Niacinamide 10% + Zinc 1%: Balancing Sebum & Congestion",
+    "subtitle": "The clinical breakdown of Vitamin B3 and Zinc PCA for clarifying blemishes and oily shine.",
+    "excerpt": "A high-strength vitamin and mineral blemish formula with 10% niacinamide to reduce the appearance of skin blemishes and congestion, supported by 1% zinc PCA to balance visible sebum...",
+    "image": "/images/vitamin_c.jpg",
+    "author": {
+      "name": "Dr. Michael Chen, MD",
+      "role": "Clinical Dermatology Fellow",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 17, 2025",
+    "readTime": "5 min read",
+    "rating": 4.7,
+    "reviewCount": 390,
+    "commentCount": 54,
+    "routineStep": "Step 2: AM/PM Clarifying Serum",
+    "frequency": "Daily (AM or PM)",
+    "amountToUse": "2 to 3 drops",
+    "targetSkinGoal": "Regulate Excessive Sebum & Tighten Pores",
+    "skinTypes": [
+      "Oily Skin",
+      "Congested T-Zone",
+      "Acne-Prone"
+    ],
+    "keyIngredients": [
+      "10% Niacinamide (Vitamin B3)",
+      "1% Zinc PCA"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Pat onto Clean Skin",
+        "desc": "Focus on oily nose, forehead, and chin."
+      },
+      {
+        "step": "Step 2: Let Settle",
+        "desc": "Avoid over-rubbing to prevent foaming/pilling."
+      }
+    ],
+    "skinBenefits": [
+      "Normalizes sebum excretion rates throughout the day",
+      "Calms visible redness from active breakouts"
+    ],
+    "pros": [
+      "Incredibly accessible everyday pricing",
+      "Fast visible reduction in midday shine"
+    ],
+    "cons": [
+      "10% concentration can be high for rare hypersensitive skin types"
+    ],
+    "verdict": "A global blemish-fighting phenomenon that reliably keeps greasy shine and enlarged pores under control.",
+    "fullContent": {
+      "intro": "The Ordinary Niacinamide 10% + Zinc 1%: Balancing Sebum & Congestion is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated The Ordinary's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "The Ordinary Niacinamide 10% + Zinc 1%: Balancing Sebum & Congestion offers an evidence-based approach to regulate excessive sebum & tighten pores, utilizing 10% Niacinamide (Vitamin B3) and 1% Zinc PCA.",
+      "ingredientsBreakdown": "Key active components include 10% Niacinamide (Vitamin B3), 1% Zinc PCA, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Oily Skin, Congested T-Zone, Acne-Prone looking to achieve regulate excessive sebum & tighten pores.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Pat onto Clean Skin; Step 2: Let Settle.",
+      "finalVerdict": "A global blemish-fighting phenomenon that reliably keeps greasy shine and enlarged pores under control."
+    }
+  },
+  {
+    "id": "s-5",
+    "slug": "vichy-mineral-89-hyaluronic-serum",
+    "badge": "Plumping Booster",
+    "rank": "#5",
+    "categoryTag": "HYDRATING SKIN BOOSTER",
+    "category": "Serums",
+    "brand": "Vichy",
+    "title": "Vichy Mineral 89: Daily Hyaluronic Acid Booster for Dehydrated Skin",
+    "subtitle": "89% volcanic mineral water and pure hyaluronic acid that strengthens skin bounce.",
+    "excerpt": "Formulated with only 11 clean ingredients, Mineral 89 quenches parched skin, fortifies against urban pollution, and leaves a dewy bounce that preps skin for subsequent active serums...",
+    "image": "/images/vitamin_c.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 15, 2025",
+    "readTime": "4 min read",
+    "rating": 4.8,
+    "reviewCount": 215,
+    "commentCount": 31,
+    "routineStep": "Step 2: First Hydration Layer",
+    "frequency": "Twice Daily (AM & PM)",
+    "amountToUse": "2 pumps",
+    "targetSkinGoal": "Replenish Cellular Water & Boost Skin Resilience",
+    "skinTypes": [
+      "Dehydrated Skin",
+      "All Skin Types",
+      "Sensitive Skin"
+    ],
+    "keyIngredients": [
+      "89% Vichy Volcanic Mineralizing Water",
+      "Natural Origin Hyaluronic Acid"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Apply to Damp Skin",
+        "desc": "Apply right after washing while face is still slightly moist."
+      },
+      {
+        "step": "Step 2: Press Firmly",
+        "desc": "Instantly plumps the epidermis with cellular moisture."
+      }
+    ],
+    "skinBenefits": [
+      "Clinically proven to strengthen the skin moisture barrier by 24%",
+      "Gives a glass-skin plumping bounce in seconds"
+    ],
+    "pros": [
+      "Lightweight gel-water texture that never pills",
+      "Alcohol-free and fragrance-free"
+    ],
+    "cons": [
+      "Needs a moisturizer layered over top to lock the water in"
+    ],
+    "verdict": "The ideal hydrating primer serum for anyone feeling tight, dehydrated, or fatigued skin.",
+    "fullContent": {
+      "intro": "Vichy Mineral 89: Daily Hyaluronic Acid Booster for Dehydrated Skin is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Vichy's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Vichy Mineral 89: Daily Hyaluronic Acid Booster for Dehydrated Skin offers an evidence-based approach to replenish cellular water & boost skin resilience, utilizing 89% Vichy Volcanic Mineralizing Water and Natural Origin Hyaluronic Acid.",
+      "ingredientsBreakdown": "Key active components include 89% Vichy Volcanic Mineralizing Water, Natural Origin Hyaluronic Acid, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Dehydrated Skin, All Skin Types, Sensitive Skin looking to achieve replenish cellular water & boost skin resilience.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Apply to Damp Skin; Step 2: Press Firmly.",
+      "finalVerdict": "The ideal hydrating primer serum for anyone feeling tight, dehydrated, or fatigued skin."
+    }
+  },
+  {
+    "id": "s-6",
+    "slug": "paulas-choice-2-percent-bha-liquid",
+    "badge": "Cult Exfoliant",
+    "rank": "#6",
+    "categoryTag": "PORE-CLEARING LIQUID",
+    "category": "Serums",
+    "brand": "Paula's Choice",
+    "title": "Paula's Choice 2% BHA Liquid Exfoliant: Clearing Blackheads & Enlarged Pores",
+    "subtitle": "The award-winning salicylic acid fluid that dissolves oil inside the pore lining.",
+    "excerpt": "This globally acclaimed leave-on exfoliant sheds built-up layers of dead skin while clearing pores and blackheads. Green tea calms irritation to reveal refined, radiant skin...",
+    "image": "/images/vitamin_c.jpg",
+    "author": {
+      "name": "Dr. Rachel Adams, MD",
+      "role": "Board-Certified Dermatologist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 13, 2025",
+    "readTime": "6 min read",
+    "rating": 4.9,
+    "reviewCount": 420,
+    "commentCount": 58,
+    "routineStep": "Step 2: Evening Exfoliant Liquid",
+    "frequency": "2 to 3 Nights per Week",
+    "amountToUse": "Few drops on palm or cotton pad",
+    "targetSkinGoal": "Clear Stubborn Blackheads & Smooth Bumpy Texture",
+    "skinTypes": [
+      "Congested Skin",
+      "Oily/Combination",
+      "Blackhead-Prone"
+    ],
+    "keyIngredients": [
+      "2% Salicylic Acid (BHA)",
+      "Green Tea Extract (Camellia Oleifera)",
+      "Methylpropanediol"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Cleanse Thoroughly",
+        "desc": "Pat skin completely dry."
+      },
+      {
+        "step": "Step 2: Splash Liquid Across T-Zone",
+        "desc": "Avoid immediate eye contours. Do not rinse off."
+      },
+      {
+        "step": "Step 3: Follow with Barrier Moisturizer",
+        "desc": "Keeps skin balanced and flake-free."
+      }
+    ],
+    "skinBenefits": [
+      "Oil-soluble BHA penetrates inside the pore lining to dissolve oxidised plugs",
+      "Significantly reduces visible pore diameter over 4 weeks"
+    ],
+    "pros": [
+      "Rapid results on strawberry nose pores and rough chin bumps",
+      "Non-abrasive chemical exfoliation"
+    ],
+    "cons": [
+      "Do not overuse daily without building skin tolerance first"
+    ],
+    "verdict": "The gold standard pore-clearing treatment worldwide. Essential for smooth, glass-like skin texture.",
+    "fullContent": {
+      "intro": "Paula's Choice 2% BHA Liquid Exfoliant: Clearing Blackheads & Enlarged Pores is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Paula's Choice's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Paula's Choice 2% BHA Liquid Exfoliant: Clearing Blackheads & Enlarged Pores offers an evidence-based approach to clear stubborn blackheads & smooth bumpy texture, utilizing 2% Salicylic Acid (BHA) and Green Tea Extract (Camellia Oleifera).",
+      "ingredientsBreakdown": "Key active components include 2% Salicylic Acid (BHA), Green Tea Extract (Camellia Oleifera), Methylpropanediol, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Congested Skin, Oily/Combination, Blackhead-Prone looking to achieve clear stubborn blackheads & smooth bumpy texture.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Cleanse Thoroughly; Step 2: Splash Liquid Across T-Zone; Step 3: Follow with Barrier Moisturizer.",
+      "finalVerdict": "The gold standard pore-clearing treatment worldwide. Essential for smooth, glass-like skin texture."
+    }
+  },
+  {
+    "id": "s-7",
+    "slug": "timeless-20-percent-vitamin-c-serum",
+    "badge": "Affordable Powerhouse",
+    "rank": "#7",
+    "categoryTag": "HIGH-POTENCY VITAMIN C",
+    "category": "Serums",
+    "brand": "Timeless Skin Care",
+    "title": "Timeless 20% Vitamin C + E Ferulic Acid: Potent Brightening on a Budget",
+    "subtitle": "How fresh airtight pump packaging keeps 20% L-ascorbic acid potent down to the last drop.",
+    "excerpt": "Combining 20% pure L-ascorbic acid with Vitamin E and Ferulic acid in an airtight opaque pump, Timeless provides professional-grade brightening without the exorbitant price tag...",
+    "image": "/images/vitamin_c.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 11, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 280,
+    "commentCount": 38,
+    "routineStep": "Step 2: Morning Active Serum",
+    "frequency": "Daily (AM)",
+    "amountToUse": "2 to 3 pumps",
+    "targetSkinGoal": "Fade Stubborn Sunspots & Evens Skin Tone",
+    "skinTypes": [
+      "Experienced Active Users",
+      "Hyperpigmentation",
+      "Resilient Skin"
+    ],
+    "keyIngredients": [
+      "20% L-Ascorbic Acid",
+      "1% Vitamin E",
+      "0.5% Ferulic Acid",
+      "Hyaluronic Acid"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Apply to Clean Dry Skin",
+        "desc": "Dispense 2 pumps onto fingers and press across face."
+      },
+      {
+        "step": "Step 2: Wait 2 Minutes",
+        "desc": "Allow the acidic pH to work before applying moisturizer."
+      }
+    ],
+    "skinBenefits": [
+      "Maximum clinical concentration of pure vitamin C for fast dark spot fading",
+      "Stimulates collagen production for noticeable skin firmness"
+    ],
+    "pros": [
+      "Yellow airtight pump protects against light and air oxidation",
+      "Superb value per milliliter"
+    ],
+    "cons": [
+      "20% strength may cause tingling on sensitive or unconditioned skin"
+    ],
+    "verdict": "The best value pure L-ascorbic acid serum on the market, backed by an airtight dispenser.",
+    "fullContent": {
+      "intro": "Timeless 20% Vitamin C + E Ferulic Acid: Potent Brightening on a Budget is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Timeless Skin Care's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Timeless 20% Vitamin C + E Ferulic Acid: Potent Brightening on a Budget offers an evidence-based approach to fade stubborn sunspots & evens skin tone, utilizing 20% L-Ascorbic Acid and 1% Vitamin E.",
+      "ingredientsBreakdown": "Key active components include 20% L-Ascorbic Acid, 1% Vitamin E, 0.5% Ferulic Acid, Hyaluronic Acid, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Experienced Active Users, Hyperpigmentation, Resilient Skin looking to achieve fade stubborn sunspots & evens skin tone.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Apply to Clean Dry Skin; Step 2: Wait 2 Minutes.",
+      "finalVerdict": "The best value pure L-ascorbic acid serum on the market, backed by an airtight dispenser."
+    }
+  },
+  {
+    "id": "s-8",
+    "slug": "sunday-riley-good-genes-lactic-acid",
+    "badge": "Overnight Glow",
+    "rank": "#8",
+    "categoryTag": "AHA SURFACE RESURFACER",
+    "category": "Serums",
+    "brand": "Sunday Riley",
+    "title": "Sunday Riley Good Genes: Purified Lactic Acid for Instant Plump & Polish",
+    "subtitle": "The clinical AHA treatment that gently dissolves dull dead skin cells overnight.",
+    "excerpt": "Formulated with purified grade lactic acid, licorice root, and lemongrass, Good Genes rapidly exfoliates dulling pore-clogging dead cells to reveal clean, smooth, luminous skin in 3 minutes...",
+    "image": "/images/vitamin_c.jpg",
+    "author": {
+      "name": "Dr. Rachel Adams, MD",
+      "role": "Board-Certified Dermatologist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 09, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 245,
+    "commentCount": 36,
+    "routineStep": "Step 2: Night Resurfacing Treatment",
+    "frequency": "2 to 3 Nights Weekly",
+    "amountToUse": "1 to 2 pumps",
+    "targetSkinGoal": "Instant Radiance & Smooth Rough Surface Texture",
+    "skinTypes": [
+      "Dull Skin",
+      "Rough Texture",
+      "Mature Skin"
+    ],
+    "keyIngredients": [
+      "Purified Lactic Acid (AHA)",
+      "Licorice Root Extract",
+      "Lemongrass",
+      "Arnica"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Apply to Clean Dry Skin",
+        "desc": "Can be used as a leave-on serum or 15-minute flash mask."
+      },
+      {
+        "step": "Step 2: Follow with Hydrating Night Cream",
+        "desc": "Wake up with noticeably brighter, silky-smooth skin."
+      }
+    ],
+    "skinBenefits": [
+      "Lactic acid hydrates while exfoliating due to its unique humectant molecular structure",
+      "Licorice root naturally brightens discoloration"
+    ],
+    "pros": [
+      "Delivers immediate visible radiance after just one application",
+      "Gentler on the moisture barrier than glycolic acid"
+    ],
+    "cons": [
+      "Distinctive botanical aroma and premium price point"
+    ],
+    "verdict": "The ultimate shortcut to instant party-ready glow and velvety smooth complexion texture.",
+    "fullContent": {
+      "intro": "Sunday Riley Good Genes: Purified Lactic Acid for Instant Plump & Polish is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Sunday Riley's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Sunday Riley Good Genes: Purified Lactic Acid for Instant Plump & Polish offers an evidence-based approach to instant radiance & smooth rough surface texture, utilizing Purified Lactic Acid (AHA) and Licorice Root Extract.",
+      "ingredientsBreakdown": "Key active components include Purified Lactic Acid (AHA), Licorice Root Extract, Lemongrass, Arnica, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Dull Skin, Rough Texture, Mature Skin looking to achieve instant radiance & smooth rough surface texture.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Apply to Clean Dry Skin; Step 2: Follow with Hydrating Night Cream.",
+      "finalVerdict": "The ultimate shortcut to instant party-ready glow and velvety smooth complexion texture."
+    }
+  },
+  {
+    "id": "s-9",
+    "slug": "geek-and-gorgeous-c-glow-serum",
+    "badge": "Freshly Mixed Science",
+    "rank": "#9",
+    "categoryTag": "FRESH-BATCH ANTIOXIDANT",
+    "category": "Serums",
+    "brand": "Geek & Gorgeous",
+    "title": "Geek & Gorgeous C-Glow 15%: Fresh-Made European Formulation Excellence",
+    "subtitle": "Light-as-water pure 15% ascorbic acid made fresh every week in European labs.",
+    "excerpt": "A featherweight water-like serum featuring 15% Vitamin C, Ferulic Acid, and Vitamin E formulated at pH 3.2. Blends seamlessly into skin without a hint of greasiness...",
+    "image": "/images/vitamin_c.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 07, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 195,
+    "commentCount": 27,
+    "routineStep": "Step 2: Morning First Liquid Active",
+    "frequency": "Daily (AM)",
+    "amountToUse": "4 to 5 drops",
+    "targetSkinGoal": "Even Tone & Fast Invisible Absorption",
+    "skinTypes": [
+      "Oily",
+      "Normal",
+      "Combination Skin"
+    ],
+    "keyIngredients": [
+      "15% L-Ascorbic Acid",
+      "Ferulic Acid",
+      "Vitamin E"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Drop Directly on Palms",
+        "desc": "Watery texture sinks in within 10 seconds."
+      },
+      {
+        "step": "Step 2: Store Bottle in Refrigerator",
+        "desc": "Keeps the solution crystal clear for 4 to 5 months."
+      }
+    ],
+    "skinBenefits": [
+      "Water-light texture leaves zero film or stickiness on oily complexions",
+      "Blocks environmental pollutants throughout the day"
+    ],
+    "pros": [
+      "Freshest batches guaranteed direct from European production",
+      "Super affordable science-first pricing"
+    ],
+    "cons": [
+      "Watery consistency requires careful dispensing so it doesn’t drip"
+    ],
+    "verdict": "A cosmetic chemist’s dream: completely transparent, scientifically sound, and refreshingly affordable.",
+    "fullContent": {
+      "intro": "Geek & Gorgeous C-Glow 15%: Fresh-Made European Formulation Excellence is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Geek & Gorgeous's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Geek & Gorgeous C-Glow 15%: Fresh-Made European Formulation Excellence offers an evidence-based approach to even tone & fast invisible absorption, utilizing 15% L-Ascorbic Acid and Ferulic Acid.",
+      "ingredientsBreakdown": "Key active components include 15% L-Ascorbic Acid, Ferulic Acid, Vitamin E, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Oily, Normal, Combination Skin looking to achieve even tone & fast invisible absorption.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Drop Directly on Palms; Step 2: Store Bottle in Refrigerator.",
+      "finalVerdict": "A cosmetic chemist’s dream: completely transparent, scientifically sound, and refreshingly affordable."
+    }
+  },
+  {
+    "id": "s-10",
+    "slug": "torriden-dive-in-hyaluronic-acid-serum",
+    "badge": "5D Multi-Hyaluron",
+    "rank": "#10",
+    "categoryTag": "5D MULTI-HYALURONIC",
+    "category": "Serums",
+    "brand": "Torriden",
+    "title": "Torriden DIVE-IN Low Molecular Hyaluronic Acid: Multi-Depth Skin Plump",
+    "subtitle": "5 molecular weights of hyaluronic acid that hydrate from the surface down to deeper dermal layers.",
+    "excerpt": "The number-one award winning hydrating serum in Korean beauty. Torriden’s 5D hyaluronic acid and soothing D-panthenol replenish inner skin tightness in seconds without stickiness...",
+    "image": "/images/vitamin_c.jpg",
+    "author": {
+      "name": "Dr. Michael Chen, MD",
+      "role": "Clinical Dermatology Fellow",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 04, 2025",
+    "readTime": "4 min read",
+    "rating": 4.9,
+    "reviewCount": 320,
+    "commentCount": 44,
+    "routineStep": "Step 2: AM/PM Deep Hydration",
+    "frequency": "Twice Daily",
+    "amountToUse": "1 full dropper",
+    "targetSkinGoal": "Relieve Inner Dryness & Plump Dehydration Lines",
+    "skinTypes": [
+      "Dehydrated Oily Skin",
+      "Dry Skin",
+      "Sensitive"
+    ],
+    "keyIngredients": [
+      "5D Complex Hyaluronic Acid (Different Daltons)",
+      "D-Panthenol",
+      "Allantoin",
+      "Malachite Extract"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Apply to Damp Clean Skin",
+        "desc": "Pat in with palms until fully absorbed."
+      },
+      {
+        "step": "Step 2: Layer if Needed",
+        "desc": "Can be layered twice for extra dry winter skin."
+      }
+    ],
+    "skinBenefits": [
+      "Low molecular weights penetrate deep to relieve inner tightness",
+      "Naturally colored pastel blue from mineral-rich malachite extract"
+    ],
+    "pros": [
+      "Completely non-tacky and weightless",
+      "Hypoallergenic and vegan formulation"
+    ],
+    "cons": [
+      "Needs a cream moisturizer over top to prevent moisture evaporation"
+    ],
+    "verdict": "The pinnacle of lightweight hydration. If hyaluronic acid serums usually feel sticky to you, Torriden will change your mind.",
+    "fullContent": {
+      "intro": "Torriden DIVE-IN Low Molecular Hyaluronic Acid: Multi-Depth Skin Plump is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Torriden's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Torriden DIVE-IN Low Molecular Hyaluronic Acid: Multi-Depth Skin Plump offers an evidence-based approach to relieve inner dryness & plump dehydration lines, utilizing 5D Complex Hyaluronic Acid (Different Daltons) and D-Panthenol.",
+      "ingredientsBreakdown": "Key active components include 5D Complex Hyaluronic Acid (Different Daltons), D-Panthenol, Allantoin, Malachite Extract, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Dehydrated Oily Skin, Dry Skin, Sensitive looking to achieve relieve inner dryness & plump dehydration lines.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Apply to Damp Clean Skin; Step 2: Layer if Needed.",
+      "finalVerdict": "The pinnacle of lightweight hydration. If hyaluronic acid serums usually feel sticky to you, Torriden will change your mind."
+    }
+  },
+  {
+    "id": "spf-1",
+    "slug": "eltamd-uv-clear-spf-46",
+    "badge": "Acne-Safe SPF",
+    "rank": "#1",
+    "categoryTag": "MINERAL & CHEMICAL HYBRID",
+    "category": "Sunscreens",
+    "brand": "EltaMD",
+    "title": "EltaMD UV Clear Broad-Spectrum SPF 46: The Acne & Rosacea Defense",
+    "subtitle": "Calming zinc oxide and high-purity niacinamide that protect without causing breakouts.",
+    "excerpt": "Oil-free EltaMD UV Clear helps calm and protect sensitive skin types prone to discoloration and breakouts. Contains zinc oxide and niacinamide for crystal clear daily defense...",
+    "image": "/images/sunscreen.jpg",
+    "author": {
+      "name": "Dr. Rachel Adams, MD",
+      "role": "Board-Certified Dermatologist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 24, 2025",
+    "readTime": "6 min read",
+    "rating": 4.8,
+    "reviewCount": 142,
+    "commentCount": 28,
+    "routineStep": "Step 5: Daily Morning UV Shield",
+    "frequency": "Every Morning (Reapply every 2 hours outdoors)",
+    "amountToUse": "Two finger-lengths (1/4 teaspoon for face)",
+    "targetSkinGoal": "Broad-Spectrum UVA/UVB Shield Without Clogging Pores",
+    "skinTypes": [
+      "Acne-Prone Skin",
+      "Rosacea & Sensitive",
+      "Hyperpigmentation-Prone"
+    ],
+    "keyIngredients": [
+      "9.0% Transparent Zinc Oxide",
+      "5% Niacinamide (Vitamin B3)",
+      "Hyaluronic Acid",
+      "Lactic Acid"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Complete Morning Routine First",
+        "desc": "Apply after your morning moisturizer has fully absorbed."
+      },
+      {
+        "step": "Step 2: Measure Two Full Finger Lengths",
+        "desc": "Dispense two ribbons of sunscreen along your index and middle fingers."
+      },
+      {
+        "step": "Step 3: Smooth Evenly Over Face & Ears",
+        "desc": "Do not aggressively rub; smooth gently in one direction for uniform UV film coverage."
+      },
+      {
+        "step": "Step 4: Allow 60 Seconds to Settle",
+        "desc": "Dries completely transparent with zero greasy shine."
+      }
+    ],
+    "skinBenefits": [
+      "Blocks up to 98% of harmful UVA photoaging rays and burning UVB rays",
+      "Niacinamide calms facial redness and helps fade existing post-inflammatory erythema",
+      "Hyaluronic acid maintains hydration throughout long days in air conditioning"
+    ],
+    "pros": [
+      "Zero breakouts or pore congestion even in humid weather",
+      "Rubs in completely clear without a white cast on fair to medium skin",
+      "Recommended by dermatologists across the US and UK"
+    ],
+    "cons": [
+      "Needs gentle blending on deeper skin tones to avoid initial sheen"
+    ],
+    "verdict": "The ultimate daily sunscreen for breakout-prone and sensitive skin. If traditional sunscreens make your skin breakout, this is your solution.",
+    "fullContent": {
+      "intro": "EltaMD UV Clear Broad-Spectrum SPF 46: The Acne & Rosacea Defense is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated EltaMD's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "EltaMD UV Clear Broad-Spectrum SPF 46: The Acne & Rosacea Defense offers an evidence-based approach to broad-spectrum uva/uvb shield without clogging pores, utilizing 9.0% Transparent Zinc Oxide and 5% Niacinamide (Vitamin B3).",
+      "ingredientsBreakdown": "Key active components include 9.0% Transparent Zinc Oxide, 5% Niacinamide (Vitamin B3), Hyaluronic Acid, Lactic Acid, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Acne-Prone Skin, Rosacea & Sensitive, Hyperpigmentation-Prone looking to achieve broad-spectrum uva/uvb shield without clogging pores.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Complete Morning Routine First; Step 2: Measure Two Full Finger Lengths; Step 3: Smooth Evenly Over Face & Ears; Step 4: Allow 60 Seconds to Settle.",
+      "finalVerdict": "The ultimate daily sunscreen for breakout-prone and sensitive skin. If traditional sunscreens make your skin breakout, this is your solution."
+    }
+  },
+  {
+    "id": "spf-2",
+    "slug": "la-roche-posay-anthelios-uvmune-400",
+    "badge": "Ultra-Long UVA Shield",
+    "rank": "#2",
+    "categoryTag": "NEXT-GEN UV DEFENSE",
+    "category": "Sunscreens",
+    "brand": "La Roche-Posay",
+    "title": "La Roche-Posay Anthelios UVMune 400: The Ultra-Long UVA Revolution",
+    "subtitle": "The Mexoryl 400 filter that protects against deep insidious 380–400nm photoaging rays.",
+    "excerpt": "Featuring the patented Mexoryl 400 filter, this invisible fluid shields against the most penetrating long UVA rays that cause deep wrinkles and hyperpigmentation...",
+    "image": "/images/sunscreen.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 22, 2025",
+    "readTime": "6 min read",
+    "rating": 4.9,
+    "reviewCount": 380,
+    "commentCount": 52,
+    "routineStep": "Step 5: Morning Ultimate UV Shield",
+    "frequency": "Daily (AM)",
+    "amountToUse": "2 finger lengths",
+    "targetSkinGoal": "Maximum Anti-Photoaging & Deep Pigment Defense",
+    "skinTypes": [
+      "All Skin Types",
+      "Sun-Sensitive",
+      "Melasma-Prone"
+    ],
+    "keyIngredients": [
+      "Mexoryl 400 (Exclusive Filter)",
+      "Netlock Technology",
+      "Vitamin E"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Shake Vigorously for 5 Seconds",
+        "desc": "Mixes the micro-suspension Netlock polymers."
+      },
+      {
+        "step": "Step 2: Smooth over Face, Neck, and Chest",
+        "desc": "Forms an ultra-resistant invisible protective mesh."
+      }
+    ],
+    "skinBenefits": [
+      "First filter in history to shield against insidious 380–400nm UVA rays",
+      "Ultra-resistant to water, sweat, and sand friction"
+    ],
+    "pros": [
+      "Invisible fluid texture leaves zero white cast on any skin tone",
+      "Does not sting eyes even during intense workouts"
+    ],
+    "cons": [
+      "Alcohol component gives a momentary initial scent that dissipates in seconds"
+    ],
+    "verdict": "The most protective sunscreen in the world today. If anti-aging and preventing sunspots is your priority, this is mandatory.",
+    "fullContent": {
+      "intro": "La Roche-Posay Anthelios UVMune 400: The Ultra-Long UVA Revolution is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated La Roche-Posay's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "La Roche-Posay Anthelios UVMune 400: The Ultra-Long UVA Revolution offers an evidence-based approach to maximum anti-photoaging & deep pigment defense, utilizing Mexoryl 400 (Exclusive Filter) and Netlock Technology.",
+      "ingredientsBreakdown": "Key active components include Mexoryl 400 (Exclusive Filter), Netlock Technology, Vitamin E, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for All Skin Types, Sun-Sensitive, Melasma-Prone looking to achieve maximum anti-photoaging & deep pigment defense.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Shake Vigorously for 5 Seconds; Step 2: Smooth over Face, Neck, and Chest.",
+      "finalVerdict": "The most protective sunscreen in the world today. If anti-aging and preventing sunspots is your priority, this is mandatory."
+    }
+  },
+  {
+    "id": "spf-3",
+    "slug": "supergoop-unseen-sunscreen-spf-40",
+    "badge": "100% Invisible Primer",
+    "rank": "#3",
+    "categoryTag": "CLEAR PRIMER SPF",
+    "category": "Sunscreens",
+    "brand": "Supergoop!",
+    "title": "Supergoop! Unseen Sunscreen SPF 40: The Totally Clear Makeup Primer",
+    "subtitle": "A 100% invisible, scentless, weightless gel that grips makeup while providing broad-spectrum defense.",
+    "excerpt": "An innovative, antioxidant-rich daily sunscreen with a unique velvety gel texture that glides onto skin like a luxury makeup primer with zero white cast...",
+    "image": "/images/sunscreen.jpg",
+    "author": {
+      "name": "Dr. Michael Chen, MD",
+      "role": "Clinical Dermatology Fellow",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 19, 2025",
+    "readTime": "5 min read",
+    "rating": 4.7,
+    "reviewCount": 290,
+    "commentCount": 41,
+    "routineStep": "Step 5: Primer Sunscreen",
+    "frequency": "Daily (AM)",
+    "amountToUse": "Quarter-sized amount",
+    "targetSkinGoal": "Zero White Cast & Flawless Makeup Grip",
+    "skinTypes": [
+      "All Skin Tones",
+      "Normal",
+      "Combination",
+      "Oily"
+    ],
+    "keyIngredients": [
+      "Avobenzone 3%, Homosalate 8%, Octisalate 5%, Octocrylene 4%",
+      "Red Algae",
+      "Meadowfoam Seed Complex"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Apply to Clean Face",
+        "desc": "Glides across the skin like silky silicone."
+      },
+      {
+        "step": "Step 2: Apply Foundation Immediately",
+        "desc": "Creates a pore-blurred velvet canvas."
+      }
+    ],
+    "skinBenefits": [
+      "Completely clear transparent formula impossible to leave a white cast",
+      "Protects against blue light emitted from phone and laptop screens"
+    ],
+    "pros": [
+      "Ideal for deep skin tones where mineral SPF looks chalky",
+      "Blurs pores like a dedicated makeup primer"
+    ],
+    "cons": [
+      "Silicone velvet feel is not for those who prefer dewy water creams"
+    ],
+    "verdict": "The easiest sunscreen to wear every day. You literally cannot see it or feel it once applied.",
+    "fullContent": {
+      "intro": "Supergoop! Unseen Sunscreen SPF 40: The Totally Clear Makeup Primer is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Supergoop!'s formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Supergoop! Unseen Sunscreen SPF 40: The Totally Clear Makeup Primer offers an evidence-based approach to zero white cast & flawless makeup grip, utilizing Avobenzone 3%, Homosalate 8%, Octisalate 5%, Octocrylene 4% and Red Algae.",
+      "ingredientsBreakdown": "Key active components include Avobenzone 3%, Homosalate 8%, Octisalate 5%, Octocrylene 4%, Red Algae, Meadowfoam Seed Complex, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for All Skin Tones, Normal, Combination, Oily looking to achieve zero white cast & flawless makeup grip.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Apply to Clean Face; Step 2: Apply Foundation Immediately.",
+      "finalVerdict": "The easiest sunscreen to wear every day. You literally cannot see it or feel it once applied."
+    }
+  },
+  {
+    "id": "spf-4",
+    "slug": "beauty-of-joseon-relief-sun-spf-50",
+    "badge": "K-Beauty Phenomenon",
+    "rank": "#4",
+    "categoryTag": "PROBIOTIC RICE ESSENCE",
+    "category": "Sunscreens",
+    "brand": "Beauty of Joseon",
+    "title": "Beauty of Joseon Relief Sun: Rice + Probiotics SPF 50+ Organic Daily Veil",
+    "subtitle": "How 30% fermented rice extract and grain probiotics create a comfortable skincare finish.",
+    "excerpt": "A lightweight cream sunscreen enriched with 30% rice extract and grain fermented extracts that hydrates and nourishes skin without ever feeling sticky or chalky...",
+    "image": "/images/sunscreen.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 17, 2025",
+    "readTime": "5 min read",
+    "rating": 4.9,
+    "reviewCount": 450,
+    "commentCount": 62,
+    "routineStep": "Step 5: Hydrating Sun Veil",
+    "frequency": "Daily (AM)",
+    "amountToUse": "Two finger lengths",
+    "targetSkinGoal": "Dewy Skin Finish & Zero Eye Stinging",
+    "skinTypes": [
+      "Dry",
+      "Normal",
+      "Combination",
+      "Sensitive"
+    ],
+    "keyIngredients": [
+      "30% Rice Bran Water",
+      "Grain Ferment Probiotics",
+      "Niacinamide",
+      "Next-Gen Chemical Filters (Uvinul A Plus, Tinosorb S)"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Smooth as Last Skincare Step",
+        "desc": "Absorbs like a refreshing moisturizer."
+      },
+      {
+        "step": "Step 2: Let Settle for 2 Minutes",
+        "desc": "Leaves a natural, healthy lit-from-within glow."
+      }
+    ],
+    "skinBenefits": [
+      "Rice extract is rich in amino acids, minerals, and vitamin E to nourish dryness",
+      "Never stings sensitive eyes even when sweating"
+    ],
+    "pros": [
+      "Feels just like a soothing day cream",
+      "Zero white cast and zero greasy residue"
+    ],
+    "cons": [
+      "Very oily skin types might find the dewy glow too moisturizing in peak summer"
+    ],
+    "verdict": "The viral sunscreen that made millions of people finally love wearing SPF daily. A true skincare masterpiece.",
+    "fullContent": {
+      "intro": "Beauty of Joseon Relief Sun: Rice + Probiotics SPF 50+ Organic Daily Veil is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Beauty of Joseon's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Beauty of Joseon Relief Sun: Rice + Probiotics SPF 50+ Organic Daily Veil offers an evidence-based approach to dewy skin finish & zero eye stinging, utilizing 30% Rice Bran Water and Grain Ferment Probiotics.",
+      "ingredientsBreakdown": "Key active components include 30% Rice Bran Water, Grain Ferment Probiotics, Niacinamide, Next-Gen Chemical Filters (Uvinul A Plus, Tinosorb S), engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Dry, Normal, Combination, Sensitive looking to achieve dewy skin finish & zero eye stinging.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Smooth as Last Skincare Step; Step 2: Let Settle for 2 Minutes.",
+      "finalVerdict": "The viral sunscreen that made millions of people finally love wearing SPF daily. A true skincare masterpiece."
+    }
+  },
+  {
+    "id": "spf-5",
+    "slug": "round-lab-birch-juice-sunscreen",
+    "badge": "Hydration Hero",
+    "rank": "#5",
+    "categoryTag": "BIRCH SAP HYDRATION",
+    "category": "Sunscreens",
+    "brand": "Round Lab",
+    "title": "Round Lab Birch Juice Moisturizing Sun Cream SPF 50+: Pure Moisture Barrier",
+    "subtitle": "Inje birch sap and vita hyaluronic acid combined in a refreshing daily sun essence.",
+    "excerpt": "Consistently voted Korea’s number-one sunscreen, Birch Juice Moisturizing Sun Cream quenches skin with natural amino-acid rich sap while providing verified broad-spectrum SPF 50+ protection...",
+    "image": "/images/sunscreen.jpg",
+    "author": {
+      "name": "Dr. Rachel Adams, MD",
+      "role": "Board-Certified Dermatologist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 14, 2025",
+    "readTime": "5 min read",
+    "rating": 4.9,
+    "reviewCount": 390,
+    "commentCount": 48,
+    "routineStep": "Step 5: Morning Moisture & Sun Shield",
+    "frequency": "Daily (AM)",
+    "amountToUse": "Two finger lengths",
+    "targetSkinGoal": "Long-Lasting Hydration & UV Protection",
+    "skinTypes": [
+      "Dehydrated Skin",
+      "Sensitive",
+      "Normal to Dry"
+    ],
+    "keyIngredients": [
+      "Inje Silver Birch Sap",
+      "Vita Hyaluronic Acid",
+      "Niacinamide"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Apply to Face and Neck",
+        "desc": "Melts instantly upon skin warmth."
+      },
+      {
+        "step": "Step 2: Pat In Gently",
+        "desc": "Leaves skin dewy, calm, and fresh."
+      }
+    ],
+    "skinBenefits": [
+      "Birch sap contains 17 amino acids that keep the moisture barrier strong",
+      "Cooling relief on heated summer skin"
+    ],
+    "pros": [
+      "Verified SPF 50+ clinical testing",
+      "Zero white cast and zero eye sting"
+    ],
+    "cons": [
+      "Needs reapplication every 2 hours if swimming or sweating"
+    ],
+    "verdict": "Feels more like a refreshing botanical hydrating essence than an SPF. A joy to apply every single morning.",
+    "fullContent": {
+      "intro": "Round Lab Birch Juice Moisturizing Sun Cream SPF 50+: Pure Moisture Barrier is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Round Lab's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Round Lab Birch Juice Moisturizing Sun Cream SPF 50+: Pure Moisture Barrier offers an evidence-based approach to long-lasting hydration & uv protection, utilizing Inje Silver Birch Sap and Vita Hyaluronic Acid.",
+      "ingredientsBreakdown": "Key active components include Inje Silver Birch Sap, Vita Hyaluronic Acid, Niacinamide, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Dehydrated Skin, Sensitive, Normal to Dry looking to achieve long-lasting hydration & uv protection.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Apply to Face and Neck; Step 2: Pat In Gently.",
+      "finalVerdict": "Feels more like a refreshing botanical hydrating essence than an SPF. A joy to apply every single morning."
+    }
+  },
+  {
+    "id": "spf-6",
+    "slug": "isntree-hyaluronic-acid-watery-sun-gel",
+    "badge": "Watery Gel Pick",
+    "rank": "#6",
+    "categoryTag": "WATERY GEL SPF",
+    "category": "Sunscreens",
+    "brand": "Isntree",
+    "title": "Isntree Hyaluronic Acid Watery Sun Gel SPF 50+: Multi-Molecular Hydration",
+    "subtitle": "8 types of hyaluronic acid and centella asiatica in a fast-absorbing water lotion.",
+    "excerpt": "Formulated with 8 different types of hyaluronic acid to lock in moisture across every epidermal layer, combined with soothing centella to calm redness from sun exposure...",
+    "image": "/images/sunscreen.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 12, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 270,
+    "commentCount": 35,
+    "routineStep": "Step 5: Morning UV Gel",
+    "frequency": "Daily (AM)",
+    "amountToUse": "Two finger lengths",
+    "targetSkinGoal": "Intense Deep Hydration & Zero Residue",
+    "skinTypes": [
+      "Combination",
+      "Dry",
+      "Dehydrated Complexion"
+    ],
+    "keyIngredients": [
+      "8 Molecular Types of Hyaluronic Acid",
+      "Centella Asiatica",
+      "Astaxanthin (Antioxidant)",
+      "Niacinamide"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Smooth over Face and Neck",
+        "desc": "Spreads effortlessly with zero tugging."
+      },
+      {
+        "step": "Step 2: Enjoy Glow",
+        "desc": "Gives skin a supple, well-rested glass glow."
+      }
+    ],
+    "skinBenefits": [
+      "Astaxanthin provides 6,000x the antioxidant power of Vitamin C against UV stress",
+      "Prevents moisture evaporation under the sun"
+    ],
+    "pros": [
+      "Ultra-cooling upon application",
+      "Zero white cast on all skin tones"
+    ],
+    "cons": [
+      "Dewy finish may need translucent powder for very oily skin"
+    ],
+    "verdict": "A brilliant daily sun gel that doubles as your morning hydrating serum.",
+    "fullContent": {
+      "intro": "Isntree Hyaluronic Acid Watery Sun Gel SPF 50+: Multi-Molecular Hydration is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Isntree's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Isntree Hyaluronic Acid Watery Sun Gel SPF 50+: Multi-Molecular Hydration offers an evidence-based approach to intense deep hydration & zero residue, utilizing 8 Molecular Types of Hyaluronic Acid and Centella Asiatica.",
+      "ingredientsBreakdown": "Key active components include 8 Molecular Types of Hyaluronic Acid, Centella Asiatica, Astaxanthin (Antioxidant), Niacinamide, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Combination, Dry, Dehydrated Complexion looking to achieve intense deep hydration & zero residue.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Smooth over Face and Neck; Step 2: Enjoy Glow.",
+      "finalVerdict": "A brilliant daily sun gel that doubles as your morning hydrating serum."
+    }
+  },
+  {
+    "id": "spf-7",
+    "slug": "skin1004-hyalu-cica-water-fit-sun-serum",
+    "badge": "Centella Calming",
+    "rank": "#7",
+    "categoryTag": "CICA WATER-FIT SERUM",
+    "category": "Sunscreens",
+    "brand": "SKIN1004",
+    "title": "SKIN1004 Hyalu-Cica Water-Fit Sun Serum: Featherweight Centella Serum",
+    "subtitle": "Madagascar centella and hyaluronic acid in a breathable pump bottle that leaves zero stickiness.",
+    "excerpt": "A golden ratio of hyaluronic acid and pure Madagascar Centella Asiatica that immediately soothes sun-heated skin while providing broad spectrum SPF 50+ protection...",
+    "image": "/images/sunscreen.jpg",
+    "author": {
+      "name": "Dr. Michael Chen, MD",
+      "role": "Clinical Dermatology Fellow",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 10, 2025",
+    "readTime": "5 min read",
+    "rating": 4.9,
+    "reviewCount": 340,
+    "commentCount": 46,
+    "routineStep": "Step 5: Featherweight Sun Serum",
+    "frequency": "Daily (AM)",
+    "amountToUse": "2 to 3 pumps",
+    "targetSkinGoal": "Calm Facial Redness & Protect from UV Damage",
+    "skinTypes": [
+      "Sensitive",
+      "Acne-Prone",
+      "Oily/Combination"
+    ],
+    "keyIngredients": [
+      "Madagascar Centella Asiatica",
+      "Hyaluronic Acid Complex",
+      "Green Tea Extract",
+      "Niacinamide"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Pump Directly onto Fingers",
+        "desc": "Silky blue-capped pump bottle prevents mess."
+      },
+      {
+        "step": "Step 2: Spread Over Face",
+        "desc": "Vanishes into skin within 20 seconds."
+      }
+    ],
+    "skinBenefits": [
+      "Centella asiatica actively suppresses inflammatory cytokine pathways",
+      "Zero clogged pores or cystic bumps"
+    ],
+    "pros": [
+      "One of the lightest fluid textures in global skincare",
+      "Hygienic pump dispenser"
+    ],
+    "cons": [
+      "Sells out frequently due to high global demand"
+    ],
+    "verdict": "The closest thing to wearing nothing at all on your skin while staying completely protected.",
+    "fullContent": {
+      "intro": "SKIN1004 Hyalu-Cica Water-Fit Sun Serum: Featherweight Centella Serum is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated SKIN1004's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "SKIN1004 Hyalu-Cica Water-Fit Sun Serum: Featherweight Centella Serum offers an evidence-based approach to calm facial redness & protect from uv damage, utilizing Madagascar Centella Asiatica and Hyaluronic Acid Complex.",
+      "ingredientsBreakdown": "Key active components include Madagascar Centella Asiatica, Hyaluronic Acid Complex, Green Tea Extract, Niacinamide, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Sensitive, Acne-Prone, Oily/Combination looking to achieve calm facial redness & protect from uv damage.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Pump Directly onto Fingers; Step 2: Spread Over Face.",
+      "finalVerdict": "The closest thing to wearing nothing at all on your skin while staying completely protected."
+    }
+  },
+  {
+    "id": "spf-8",
+    "slug": "paulas-choice-resist-super-light-spf-30",
+    "badge": "Matte Mineral Tint",
+    "rank": "#8",
+    "categoryTag": "TINTED MINERAL SPF",
+    "category": "Sunscreens",
+    "brand": "Paula's Choice",
+    "title": "Paula's Choice Resist Super-Light Wrinkle Defense SPF 30: Tinted Matte Mineral",
+    "subtitle": "13% pure zinc oxide with a sheer neutralizing tint for oily, red, or breakout-prone skin.",
+    "excerpt": "A silky mineral sunscreen with a sheer universal tint that blurs pores, evens redness, and leaves a soft-matte finish while defending with pure zinc oxide against photoaging...",
+    "image": "/images/sunscreen.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 08, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 220,
+    "commentCount": 33,
+    "routineStep": "Step 5: Morning Matte Tint & SPF",
+    "frequency": "Daily (AM)",
+    "amountToUse": "Quarter-sized amount",
+    "targetSkinGoal": "Control Oil Shine & Neutralize Redness",
+    "skinTypes": [
+      "Oily Skin",
+      "Combination",
+      "Rosacea-Prone"
+    ],
+    "keyIngredients": [
+      "13% Zinc Oxide",
+      "Resveratrol",
+      "Vitamin E",
+      "Willow Bark Extract"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Smooth over Face as Last Step",
+        "desc": "The sheer tint adapts to skin tone to neutralize redness."
+      },
+      {
+        "step": "Step 2: Enjoy Soft-Matte Finish",
+        "desc": "No foundation needed on casual days."
+      }
+    ],
+    "skinBenefits": [
+      "Zinc oxide calms inflammation and provides physical broad-spectrum UV reflection",
+      "Antioxidants boost defense against environmental pollution"
+    ],
+    "pros": [
+      "Controls oily breakthrough shine for 8+ hours",
+      "100% mineral UV filters gentle on eyes"
+    ],
+    "cons": [
+      "Tint is sheer but best suited for fair to medium-tan complexions"
+    ],
+    "verdict": "The holy grail mineral sunscreen for anyone with oily or rosacea-prone skin who hates greasy shine.",
+    "fullContent": {
+      "intro": "Paula's Choice Resist Super-Light Wrinkle Defense SPF 30: Tinted Matte Mineral is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Paula's Choice's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Paula's Choice Resist Super-Light Wrinkle Defense SPF 30: Tinted Matte Mineral offers an evidence-based approach to control oil shine & neutralize redness, utilizing 13% Zinc Oxide and Resveratrol.",
+      "ingredientsBreakdown": "Key active components include 13% Zinc Oxide, Resveratrol, Vitamin E, Willow Bark Extract, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Oily Skin, Combination, Rosacea-Prone looking to achieve control oil shine & neutralize redness.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Smooth over Face as Last Step; Step 2: Enjoy Soft-Matte Finish.",
+      "finalVerdict": "The holy grail mineral sunscreen for anyone with oily or rosacea-prone skin who hates greasy shine."
+    }
+  },
+  {
+    "id": "spf-9",
+    "slug": "haruharu-wonder-black-rice-sunscreen",
+    "badge": "Airy Chemical Fit",
+    "rank": "#9",
+    "categoryTag": "BLACK RICE HYDRATION",
+    "category": "Sunscreens",
+    "brand": "Haruharu Wonder",
+    "title": "Haruharu Wonder Black Rice Moisture Airyfit Daily Sunscreen: Velvety Matte",
+    "subtitle": "Fermented black rice antioxidants and heartleaf in a yellow-tube chemical sunscreen.",
+    "excerpt": "A lightweight chemical daily sunscreen with fermented Korean black rice extract, ceramide NP, and heartleaf that provides invisible broad-spectrum protection with zero white cast...",
+    "image": "/images/sunscreen.jpg",
+    "author": {
+      "name": "Dr. Rachel Adams, MD",
+      "role": "Board-Certified Dermatologist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 05, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 195,
+    "commentCount": 28,
+    "routineStep": "Step 5: Morning Airyfit SPF",
+    "frequency": "Daily (AM)",
+    "amountToUse": "Two finger lengths",
+    "targetSkinGoal": "Velvety Finish with Zero Residue",
+    "skinTypes": [
+      "All Skin Types",
+      "Normal",
+      "Combination"
+    ],
+    "keyIngredients": [
+      "Fermented Black Rice Extract",
+      "Heartleaf (Houttuynia Cordata)",
+      "Ceramide NP",
+      "Adenosine"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Apply Generously",
+        "desc": "Glides across the skin with zero drag."
+      },
+      {
+        "step": "Step 2: Let Settle",
+        "desc": "Leaves a natural velvety-matte finish that holds makeup in place."
+      }
+    ],
+    "skinBenefits": [
+      "Black rice contains concentrated anthocyanins that protect cellular DNA",
+      "Heartleaf calms heated skin"
+    ],
+    "pros": [
+      "Yellow tube is 100% invisible on deep dark skin tones",
+      "Airless squeeze tube is hygienic and travel-friendly"
+    ],
+    "cons": [
+      "Be sure to choose the yellow tube (chemical) for zero cast, not the mineral version if you have deep skin"
+    ],
+    "verdict": "A magnificent everyday sunscreen that feels like a weightless moisturizer with outstanding UV defense.",
+    "fullContent": {
+      "intro": "Haruharu Wonder Black Rice Moisture Airyfit Daily Sunscreen: Velvety Matte is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Haruharu Wonder's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Haruharu Wonder Black Rice Moisture Airyfit Daily Sunscreen: Velvety Matte offers an evidence-based approach to velvety finish with zero residue, utilizing Fermented Black Rice Extract and Heartleaf (Houttuynia Cordata).",
+      "ingredientsBreakdown": "Key active components include Fermented Black Rice Extract, Heartleaf (Houttuynia Cordata), Ceramide NP, Adenosine, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for All Skin Types, Normal, Combination looking to achieve velvety finish with zero residue.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Apply Generously; Step 2: Let Settle.",
+      "finalVerdict": "A magnificent everyday sunscreen that feels like a weightless moisturizer with outstanding UV defense."
+    }
+  },
+  {
+    "id": "spf-10",
+    "slug": "eucerin-oil-control-sun-gel-cream-spf-50",
+    "badge": "8-Hour Shine Control",
+    "rank": "#10",
+    "categoryTag": "DRY-TOUCH OIL CONTROL",
+    "category": "Sunscreens",
+    "brand": "Eucerin",
+    "title": "Eucerin Oil Control Dry Touch Sun Gel-Cream SPF 50+: 8-Hour Anti-Shine",
+    "subtitle": "L-Carnitine and lipid-absorbing pigments that keep very oily skin completely matte.",
+    "excerpt": "A European pharmacy standout engineered specifically for oily and acne-prone skin, using Oil Control technology with L-Carnitine to provide an immediate dry-touch matte finish...",
+    "image": "/images/sunscreen.jpg",
+    "author": {
+      "name": "Dr. Michael Chen, MD",
+      "role": "Clinical Dermatology Fellow",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 02, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 310,
+    "commentCount": 43,
+    "routineStep": "Step 5: Morning Anti-Shine Shield",
+    "frequency": "Daily (AM)",
+    "amountToUse": "2 pumps",
+    "targetSkinGoal": "Long-Lasting Matte Finish for Oily Skin",
+    "skinTypes": [
+      "Very Oily Skin",
+      "Acne-Prone",
+      "Humid Climates"
+    ],
+    "keyIngredients": [
+      "L-Carnitine",
+      "Lipid-Absorbing Micro-Pigments",
+      "Licochalcone A (Antioxidant)",
+      "Glycyrrhetinic Acid"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Smooth over Face in Upward Motions",
+        "desc": "Dries to touch in under 10 seconds."
+      },
+      {
+        "step": "Step 2: Proceed with Day",
+        "desc": "Repels sebum breakthrough throughout the day."
+      }
+    ],
+    "skinBenefits": [
+      "L-Carnitine helps skin cells oxidize fatty acids rather than excreting excess oil",
+      "Glycyrrhetinic acid supports skin natural DNA repair mechanism"
+    ],
+    "pros": [
+      "The best sunscreen in the world for true grease-free matte wear",
+      "Zero white cast and zero stickiness"
+    ],
+    "cons": [
+      "Can be slightly too drying for people with dry or dehydrated skin"
+    ],
+    "verdict": "If you have notoriously oily skin and hate sunscreen with a passion, this is the one product that will convert you.",
+    "fullContent": {
+      "intro": "Eucerin Oil Control Dry Touch Sun Gel-Cream SPF 50+: 8-Hour Anti-Shine is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Eucerin's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Eucerin Oil Control Dry Touch Sun Gel-Cream SPF 50+: 8-Hour Anti-Shine offers an evidence-based approach to long-lasting matte finish for oily skin, utilizing L-Carnitine and Lipid-Absorbing Micro-Pigments.",
+      "ingredientsBreakdown": "Key active components include L-Carnitine, Lipid-Absorbing Micro-Pigments, Licochalcone A (Antioxidant), Glycyrrhetinic Acid, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Very Oily Skin, Acne-Prone, Humid Climates looking to achieve long-lasting matte finish for oily skin.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Smooth over Face in Upward Motions; Step 2: Proceed with Day.",
+      "finalVerdict": "If you have notoriously oily skin and hate sunscreen with a passion, this is the one product that will convert you."
+    }
+  },
+  {
+    "id": "aa-1",
+    "slug": "the-ordinary-retinol-0-5-in-squalane",
+    "badge": "Gentle Retinoid",
+    "rank": "#1",
+    "categoryTag": "NIGHT RENEWAL GUIDE",
+    "category": "Anti-Aging",
+    "brand": "The Ordinary",
+    "title": "The Safe Retinol Guide: How to Avoid Peeling, Purging, and Stinging",
+    "subtitle": "Step-by-step beginner protocol on the sandwich method, pacing frequency, and building retinoid tolerance.",
+    "excerpt": "Retinoids are the most clinically proven active for smoothing fine lines, improving elasticity, and boosting cellular turnover. Learn how to introduce it without wrecking your barrier...",
+    "image": "/images/retinol_serum.jpg",
+    "author": {
+      "name": "Dr. Rachel Adams, MD",
+      "role": "Board-Certified Dermatologist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 24, 2025",
+    "readTime": "6 min read",
+    "rating": 4.7,
+    "reviewCount": 156,
+    "commentCount": 38,
+    "routineStep": "Step 3: Nighttime Active Treatment",
+    "frequency": "2 Nights per Week (gradually increase)",
+    "amountToUse": "2 to 3 drops",
+    "targetSkinGoal": "Smooth Fine Lines & Accelerate Cellular Renewal",
+    "skinTypes": [
+      "Aging Skin",
+      "Texture Irregularities",
+      "Fine Lines",
+      "Retinoid Beginners"
+    ],
+    "keyIngredients": [
+      "0.5% Pure Retinol",
+      "Plant-Derived Squalane (Buffer)",
+      "Jojoba Seed Extract",
+      "Tomato Fruit Extract"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Cleanse & Wait 10 Minutes",
+        "desc": "Never apply retinol to damp skin; moisture accelerates penetration and triggers irritation."
+      },
+      {
+        "step": "Step 2: Apply Light Moisturizer (Buffer)",
+        "desc": "The Sandwich Method: a light layer of moisturizer protects delicate epidermal layers."
+      },
+      {
+        "step": "Step 3: Press 2–3 Drops",
+        "desc": "Smooth over cheeks and forehead, avoiding immediate eye and lip corners."
+      },
+      {
+        "step": "Step 4: Seal with Rich Barrier Cream",
+        "desc": "Locks in active while keeping lipid bonds nourished overnight."
+      }
+    ],
+    "skinBenefits": [
+      "Accelerates skin cell turnover so fresh, youthful cells reach the surface faster",
+      "Stimulates fibroblasts to produce new type-I and type-III collagen fibers",
+      "Re-organizes melanin distribution to reduce age spots and sun-induced discoloration"
+    ],
+    "pros": [
+      "Squalane base buffers against flaking and tightness",
+      "Exceptionally budget-friendly entry into vitamin A science",
+      "Clinically visible line smoothing after 12 weeks"
+    ],
+    "cons": [
+      "Requires patience: true collagen renewal takes 8 to 12 weeks of consistent use",
+      "Strictly for nighttime use; must be paired with morning SPF 50+"
+    ],
+    "verdict": "The single most cost-effective and gentle way to introduce pure retinol into an anti-aging nighttime regimen.",
+    "fullContent": {
+      "intro": "The Safe Retinol Guide: How to Avoid Peeling, Purging, and Stinging is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated The Ordinary's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "The Safe Retinol Guide: How to Avoid Peeling, Purging, and Stinging offers an evidence-based approach to smooth fine lines & accelerate cellular renewal, utilizing 0.5% Pure Retinol and Plant-Derived Squalane (Buffer).",
+      "ingredientsBreakdown": "Key active components include 0.5% Pure Retinol, Plant-Derived Squalane (Buffer), Jojoba Seed Extract, Tomato Fruit Extract, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Aging Skin, Texture Irregularities, Fine Lines, Retinoid Beginners looking to achieve smooth fine lines & accelerate cellular renewal.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Cleanse & Wait 10 Minutes; Step 2: Apply Light Moisturizer (Buffer); Step 3: Press 2–3 Drops; Step 4: Seal with Rich Barrier Cream.",
+      "finalVerdict": "The single most cost-effective and gentle way to introduce pure retinol into an anti-aging nighttime regimen."
+    }
+  },
+  {
+    "id": "aa-2",
+    "slug": "medik8-crystal-retinal-3-review",
+    "badge": "Next-Gen Retinal",
+    "rank": "#2",
+    "categoryTag": "RETINALDEHYDE SCIENCE",
+    "category": "Anti-Aging",
+    "brand": "Medik8",
+    "title": "Medik8 Crystal Retinal 3: Why Retinaldehyde Works 11x Faster Than Retinol",
+    "subtitle": "The encapsulated retinaldehyde ladder that transforms skin with minimal irritation.",
+    "excerpt": "Retinaldehyde requires only one single conversion step to retinoic acid compared to two steps for traditional retinol, delivering clinical anti-aging results up to 11 times faster...",
+    "image": "/images/retinol_serum.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 22, 2025",
+    "readTime": "6 min read",
+    "rating": 4.9,
+    "reviewCount": 310,
+    "commentCount": 46,
+    "routineStep": "Step 3: Nighttime Retinal Serum",
+    "frequency": "2 Nights weekly, building to every night",
+    "amountToUse": "2 pumps",
+    "targetSkinGoal": "Rapid Wrinkle Reduction & Firming",
+    "skinTypes": [
+      "All Skin Types",
+      "Fine Lines",
+      "Loss of Elasticity",
+      "Blemish-Prone Mature Skin"
+    ],
+    "keyIngredients": [
+      "0.03% Encapsulated Retinaldehyde",
+      "Hyaluronic Acid",
+      "Vitamin E",
+      "Glycerin"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Cleanse in Evening",
+        "desc": "Pat skin completely dry."
+      },
+      {
+        "step": "Step 2: Smooth 2 Pumps Across Face",
+        "desc": "The rich peach-colored cream sinks in smoothly."
+      },
+      {
+        "step": "Step 3: Follow with Barrier Moisturizer",
+        "desc": "Maintains skin softness overnight."
+      }
+    ],
+    "skinBenefits": [
+      "Converts to active retinoic acid 11 times faster than standard retinol",
+      "Retinal possesses direct antibacterial properties against acne bacteria"
+    ],
+    "pros": [
+      "Crystal-encapsulated time-release system minimizes peeling",
+      "Progressive ladder allows stepping up to strength 6, 10, and 20 over time"
+    ],
+    "cons": [
+      "Premium investment price point"
+    ],
+    "verdict": "The gold standard in modern over-the-counter vitamin A. Outstanding results without the dreaded retinol peel.",
+    "fullContent": {
+      "intro": "Medik8 Crystal Retinal 3: Why Retinaldehyde Works 11x Faster Than Retinol is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Medik8's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Medik8 Crystal Retinal 3: Why Retinaldehyde Works 11x Faster Than Retinol offers an evidence-based approach to rapid wrinkle reduction & firming, utilizing 0.03% Encapsulated Retinaldehyde and Hyaluronic Acid.",
+      "ingredientsBreakdown": "Key active components include 0.03% Encapsulated Retinaldehyde, Hyaluronic Acid, Vitamin E, Glycerin, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for All Skin Types, Fine Lines, Loss of Elasticity, Blemish-Prone Mature Skin looking to achieve rapid wrinkle reduction & firming.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Cleanse in Evening; Step 2: Smooth 2 Pumps Across Face; Step 3: Follow with Barrier Moisturizer.",
+      "finalVerdict": "The gold standard in modern over-the-counter vitamin A. Outstanding results without the dreaded retinol peel."
+    }
+  },
+  {
+    "id": "aa-3",
+    "slug": "sunday-riley-a-plus-retinoid-serum",
+    "badge": "High-Dose Matrix",
+    "rank": "#3",
+    "categoryTag": "ADVANCED RETINOID BLEND",
+    "category": "Anti-Aging",
+    "brand": "Sunday Riley",
+    "title": "Sunday Riley A+ High-Dose Retinoid Serum: 6.5% Active Retinoid Matrix",
+    "subtitle": "Blending hydroxypinacolone retinoate with encapsulated retinol and blue-green algae.",
+    "excerpt": "Combining 5% retinoid ester blend, 1% liposomal-encapsulated retinol, and 0.5% blue-green algae, A+ delivers powerful anti-aging results cushioned with CoQ10 and Hawaiian white honey...",
+    "image": "/images/retinol_serum.jpg",
+    "author": {
+      "name": "Dr. Michael Chen, MD",
+      "role": "Clinical Dermatology Fellow",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 20, 2025",
+    "readTime": "6 min read",
+    "rating": 4.8,
+    "reviewCount": 220,
+    "commentCount": 34,
+    "routineStep": "Step 3: Night Treatment",
+    "frequency": "2 to 3 nights per week",
+    "amountToUse": "1 to 2 pumps",
+    "targetSkinGoal": "Plump Deep Expression Lines & Restore Density",
+    "skinTypes": [
+      "Mature Skin",
+      "Sun-Damaged Skin",
+      "Experienced Retinoid Users"
+    ],
+    "keyIngredients": [
+      "Hydroxypinacolone Retinoate (HPR)",
+      "Encapsulated Retinol",
+      "CoQ10",
+      "Hawaiian White Honey"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Apply to Clean Dry Skin at Night",
+        "desc": "Smooth over face and neck."
+      },
+      {
+        "step": "Step 2: Seal with Night Oil or Cream",
+        "desc": "Locks in the lipid-soluble retinoid."
+      }
+    ],
+    "skinBenefits": [
+      "CoQ10 improves the appearance of aging and UV-damaged skin",
+      "Hawaiian white honey provides deep humectant nourishment to buffer the retinoid"
+    ],
+    "pros": [
+      "Noticeably firmer skin and softened expression lines in 4 weeks",
+      "Cushioned formula reduces peeling"
+    ],
+    "cons": [
+      "High-potency formulation not recommended for initial retinoid beginners"
+    ],
+    "verdict": "A powerhouse anti-aging treatment for experienced skincare veterans wanting real collagen-boosting density.",
+    "fullContent": {
+      "intro": "Sunday Riley A+ High-Dose Retinoid Serum: 6.5% Active Retinoid Matrix is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Sunday Riley's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Sunday Riley A+ High-Dose Retinoid Serum: 6.5% Active Retinoid Matrix offers an evidence-based approach to plump deep expression lines & restore density, utilizing Hydroxypinacolone Retinoate (HPR) and Encapsulated Retinol.",
+      "ingredientsBreakdown": "Key active components include Hydroxypinacolone Retinoate (HPR), Encapsulated Retinol, CoQ10, Hawaiian White Honey, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Mature Skin, Sun-Damaged Skin, Experienced Retinoid Users looking to achieve plump deep expression lines & restore density.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Apply to Clean Dry Skin at Night; Step 2: Seal with Night Oil or Cream.",
+      "finalVerdict": "A powerhouse anti-aging treatment for experienced skincare veterans wanting real collagen-boosting density."
+    }
+  },
+  {
+    "id": "aa-4",
+    "slug": "paulas-choice-1-percent-retinol-treatment",
+    "badge": "Clinical Strength",
+    "rank": "#4",
+    "categoryTag": "PEPTIDE & RETINOL SYNERGY",
+    "category": "Anti-Aging",
+    "brand": "Paula's Choice",
+    "title": "Paula's Choice 1% Retinol Treatment: Restoring Collagen & Deep Wrinkles",
+    "subtitle": "1% pure slow-release retinol combined with firming peptides and soothing oat extract.",
+    "excerpt": "A potent 1% retinol concentration supported by firming tetrapeptides and licorice extract to visibly diminish deep wrinkles, firm sagging skin, and fade age spots...",
+    "image": "/images/retinol_serum.jpg",
+    "author": {
+      "name": "Dr. Rachel Adams, MD",
+      "role": "Board-Certified Dermatologist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 17, 2025",
+    "readTime": "6 min read",
+    "rating": 4.9,
+    "reviewCount": 340,
+    "commentCount": 47,
+    "routineStep": "Step 3: Evening Clinical Treatment",
+    "frequency": "2 nights weekly to start",
+    "amountToUse": "1 pea-sized pump",
+    "targetSkinGoal": "Diminish Deep Wrinkles & Tighten Slackened Skin",
+    "skinTypes": [
+      "Mature Skin",
+      "Sun-Damaged Complexion",
+      "Fine Lines & Wrinkles"
+    ],
+    "keyIngredients": [
+      "1% Pure Retinol",
+      "Palmitoyl Tetrapeptide-7",
+      "Licorice Root Extract",
+      "Avena Sativa (Oat) Kernel Extract"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Dispense One Pea-Sized Pump",
+        "desc": "A little goes a very long way."
+      },
+      {
+        "step": "Step 2: Blend Across Face and Neck",
+        "desc": "Avoid immediate eyelids and mouth corners."
+      },
+      {
+        "step": "Step 3: Always Use SPF 30+ the Next Morning",
+        "desc": "Essential to protect new cellular growth."
+      }
+    ],
+    "skinBenefits": [
+      "Clinically proven to reduce deep wrinkle depth and firm facial contours",
+      "Peptides stimulate fibronectin and collagen synthesis simultaneously"
+    ],
+    "pros": [
+      "Oat extract and licorice buffer redness effectively",
+      "Airtight pump preserves vitamin A stability"
+    ],
+    "cons": [
+      "Very potent: must be introduced slowly over 6 weeks"
+    ],
+    "verdict": "One of the closest over-the-counter alternatives to prescription tretinoin for dramatic facial rejuvenation.",
+    "fullContent": {
+      "intro": "Paula's Choice 1% Retinol Treatment: Restoring Collagen & Deep Wrinkles is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Paula's Choice's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Paula's Choice 1% Retinol Treatment: Restoring Collagen & Deep Wrinkles offers an evidence-based approach to diminish deep wrinkles & tighten slackened skin, utilizing 1% Pure Retinol and Palmitoyl Tetrapeptide-7.",
+      "ingredientsBreakdown": "Key active components include 1% Pure Retinol, Palmitoyl Tetrapeptide-7, Licorice Root Extract, Avena Sativa (Oat) Kernel Extract, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Mature Skin, Sun-Damaged Complexion, Fine Lines & Wrinkles looking to achieve diminish deep wrinkles & tighten slackened skin.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Dispense One Pea-Sized Pump; Step 2: Blend Across Face and Neck; Step 3: Always Use SPF 30+ the Next Morning.",
+      "finalVerdict": "One of the closest over-the-counter alternatives to prescription tretinoin for dramatic facial rejuvenation."
+    }
+  },
+  {
+    "id": "aa-5",
+    "slug": "roc-retinol-correxion-night-cream",
+    "badge": "Drugstore Legend",
+    "rank": "#5",
+    "categoryTag": "NIGHT REPAIR CREAM",
+    "category": "Anti-Aging",
+    "brand": "RoC",
+    "title": "RoC Retinol Correxion Deep Wrinkle Night Cream: The 25-Year Pharmacy Pioneer",
+    "subtitle": "The mineral-complex stabilized retinol that works while you sleep.",
+    "excerpt": "RoC was the first brand to discover the method for stabilizing pure retinol. This nourishing night cream reduces deep expression wrinkles and lines within 12 weeks of nightly use...",
+    "image": "/images/retinol_serum.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 15, 2025",
+    "readTime": "5 min read",
+    "rating": 4.7,
+    "reviewCount": 290,
+    "commentCount": 39,
+    "routineStep": "Step 4: All-In-One Retinol Night Cream",
+    "frequency": "Nightly (or every other night)",
+    "amountToUse": "Dime-sized amount",
+    "targetSkinGoal": "Smooth Deep Expression Wrinkles",
+    "skinTypes": [
+      "Mature Skin",
+      "Normal to Dry",
+      "Experienced Users"
+    ],
+    "keyIngredients": [
+      "Pure RoC Retinol",
+      "Glycolic Acid",
+      "Essential Minerals (Zinc, Copper, Magnesium)",
+      "Squalane"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Cleanse in the Evening",
+        "desc": "Pat face completely dry."
+      },
+      {
+        "step": "Step 2: Smooth over Face and Neck",
+        "desc": "Functions as both your active serum and night moisturizer."
+      }
+    ],
+    "skinBenefits": [
+      "Mineral complex accelerates active retinol bioavailability into the skin matrix",
+      "Provides continuous 12-hour nighttime repair"
+    ],
+    "pros": [
+      "Very accessible pharmacy price point",
+      "All-in-one cream eliminates the need for multiple night steps"
+    ],
+    "cons": [
+      "Contains mild fragrance which sensitive skin should note"
+    ],
+    "verdict": "A trusted classic that has stood the test of clinical trials for over two decades.",
+    "fullContent": {
+      "intro": "RoC Retinol Correxion Deep Wrinkle Night Cream: The 25-Year Pharmacy Pioneer is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated RoC's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "RoC Retinol Correxion Deep Wrinkle Night Cream: The 25-Year Pharmacy Pioneer offers an evidence-based approach to smooth deep expression wrinkles, utilizing Pure RoC Retinol and Glycolic Acid.",
+      "ingredientsBreakdown": "Key active components include Pure RoC Retinol, Glycolic Acid, Essential Minerals (Zinc, Copper, Magnesium), Squalane, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Mature Skin, Normal to Dry, Experienced Users looking to achieve smooth deep expression wrinkles.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Cleanse in the Evening; Step 2: Smooth over Face and Neck.",
+      "finalVerdict": "A trusted classic that has stood the test of clinical trials for over two decades."
+    }
+  },
+  {
+    "id": "aa-6",
+    "slug": "geek-and-gorgeous-a-game-retinal",
+    "badge": "Budget Retinal Master",
+    "rank": "#6",
+    "categoryTag": "STABLE RETINAL EMULSION",
+    "category": "Anti-Aging",
+    "brand": "Geek & Gorgeous",
+    "title": "Geek & Gorgeous A-Game 5: High-Stability 0.05% Retinaldehyde Emulsion",
+    "subtitle": "Smart European formulation delivering next-gen retinaldehyde at an unbeatable price.",
+    "excerpt": "A silky, bright yellow emulsion featuring 0.05% retinaldehyde and allantoin that speeds up cellular turnover without the harsh flaking associated with standard retinol...",
+    "image": "/images/retinol_serum.jpg",
+    "author": {
+      "name": "Dr. Michael Chen, MD",
+      "role": "Clinical Dermatology Fellow",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 13, 2025",
+    "readTime": "5 min read",
+    "rating": 4.9,
+    "reviewCount": 310,
+    "commentCount": 42,
+    "routineStep": "Step 3: Evening Retinal Step",
+    "frequency": "2 to 3 nights weekly, building up",
+    "amountToUse": "1 pump",
+    "targetSkinGoal": "Fade Lines, Refine Texture & Clear Breakouts",
+    "skinTypes": [
+      "All Skin Types",
+      "Blemish-Prone Aging Skin",
+      "Sensitive"
+    ],
+    "keyIngredients": [
+      "0.05% Retinaldehyde",
+      "Allantoin",
+      "Biosaccharide Gum-1"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Dispense One Pump",
+        "desc": "Naturally bright yellow due to active retinal."
+      },
+      {
+        "step": "Step 2: Spread Over Face and Neck",
+        "desc": "Absorbs instantly without color residue on skin."
+      },
+      {
+        "step": "Step 3: Follow with Barrier Moisturizer",
+        "desc": "Ensures optimal night barrier hydration."
+      }
+    ],
+    "skinBenefits": [
+      "Reaches retinoic acid status in just one enzymatic step",
+      "Noticeably refines skin texture and minimizes enlarged pores within 3 weeks"
+    ],
+    "pros": [
+      "Remarkable price-to-performance ratio",
+      "Fragrance-free and vegan formula"
+    ],
+    "cons": [
+      "Bright yellow color looks vivid upon dispensing but rubs in transparently"
+    ],
+    "verdict": "The best value retinaldehyde product in global skincare today. An absolute must-try.",
+    "fullContent": {
+      "intro": "Geek & Gorgeous A-Game 5: High-Stability 0.05% Retinaldehyde Emulsion is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Geek & Gorgeous's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Geek & Gorgeous A-Game 5: High-Stability 0.05% Retinaldehyde Emulsion offers an evidence-based approach to fade lines, refine texture & clear breakouts, utilizing 0.05% Retinaldehyde and Allantoin.",
+      "ingredientsBreakdown": "Key active components include 0.05% Retinaldehyde, Allantoin, Biosaccharide Gum-1, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for All Skin Types, Blemish-Prone Aging Skin, Sensitive looking to achieve fade lines, refine texture & clear breakouts.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Dispense One Pump; Step 2: Spread Over Face and Neck; Step 3: Follow with Barrier Moisturizer.",
+      "finalVerdict": "The best value retinaldehyde product in global skincare today. An absolute must-try."
+    }
+  },
+  {
+    "id": "aa-7",
+    "slug": "drunk-elephant-a-passioni-retinol-cream",
+    "badge": "Botanical Fusion",
+    "rank": "#7",
+    "categoryTag": "VEGAN 1% RETINOL",
+    "category": "Anti-Aging",
+    "brand": "Drunk Elephant",
+    "title": "Drunk Elephant A-Passioni: 1% Vegan Retinol Infused with Superfood Oils",
+    "subtitle": "1% pure retinol cushioned with passionfruit, apricot, and marula oils for barrier defense.",
+    "excerpt": "A clean, cutting-edge formula combining 1% vegan retinol with nourishing passionfruit, apricot, and marula oils plus triple peptides to dramatically improve skin bounce and clarity...",
+    "image": "/images/retinol_serum.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 11, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 260,
+    "commentCount": 37,
+    "routineStep": "Step 3: Night Treatment Cream",
+    "frequency": "Once weekly to start",
+    "amountToUse": "Pea-sized amount",
+    "targetSkinGoal": "Resurface Aging Texture & Restore Bounce",
+    "skinTypes": [
+      "Resilient Skin",
+      "Experienced Retinoid Users",
+      "Mature Complexions"
+    ],
+    "keyIngredients": [
+      "1% Pure Retinol",
+      "Triple Peptide Blend",
+      "Winter Cherry (Physalis Alkekengi)",
+      "Marula & Passionfruit Seed Oil"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Mix with Hydrating Serum or Oil",
+        "desc": "Can be mixed directly into B-Hydra or Marula oil to buffer intensity."
+      },
+      {
+        "step": "Step 2: Press Evenly onto Clean Dry Face",
+        "desc": "Use strictly in evening routines."
+      }
+    ],
+    "skinBenefits": [
+      "Superfood oils prevent the dry tight feeling common with 1% retinol",
+      "Antioxidants defend against free radical breakdown"
+    ],
+    "pros": [
+      "Aluminum tube packaging protects against air degradation",
+      "Free of silicones, essential oils, and fragrance"
+    ],
+    "cons": [
+      "Very potent: initial peeling will occur if used multiple nights in a row prematurely"
+    ],
+    "verdict": "A rich, nourishing botanical powerhouse for experienced retinoid lovers seeking clinical results.",
+    "fullContent": {
+      "intro": "Drunk Elephant A-Passioni: 1% Vegan Retinol Infused with Superfood Oils is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Drunk Elephant's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Drunk Elephant A-Passioni: 1% Vegan Retinol Infused with Superfood Oils offers an evidence-based approach to resurface aging texture & restore bounce, utilizing 1% Pure Retinol and Triple Peptide Blend.",
+      "ingredientsBreakdown": "Key active components include 1% Pure Retinol, Triple Peptide Blend, Winter Cherry (Physalis Alkekengi), Marula & Passionfruit Seed Oil, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Resilient Skin, Experienced Retinoid Users, Mature Complexions looking to achieve resurface aging texture & restore bounce.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Mix with Hydrating Serum or Oil; Step 2: Press Evenly onto Clean Dry Face.",
+      "finalVerdict": "A rich, nourishing botanical powerhouse for experienced retinoid lovers seeking clinical results."
+    }
+  },
+  {
+    "id": "aa-8",
+    "slug": "naturium-retinaldehyde-cream-serum",
+    "badge": "Liposomal Delivery",
+    "rank": "#8",
+    "categoryTag": "LIPOSOMAL RETINAL",
+    "category": "Anti-Aging",
+    "brand": "Naturium",
+    "title": "Naturium Retinaldehyde Cream Serum 0.05%: Sustained-Release Radiance",
+    "subtitle": "Encapsulated retinaldehyde in an emulsion base designed to bypass surface barrier irritation.",
+    "excerpt": "Formulated with sustained-release liposomal retinaldehyde at 0.05%, this creamy serum fights fine lines, improves texture, and refines pores with minimal redness...",
+    "image": "/images/retinol_serum.jpg",
+    "author": {
+      "name": "Dr. Rachel Adams, MD",
+      "role": "Board-Certified Dermatologist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 09, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 210,
+    "commentCount": 29,
+    "routineStep": "Step 3: Evening Retinal Serum",
+    "frequency": "Every other night",
+    "amountToUse": "1 to 2 pumps",
+    "targetSkinGoal": "Target Crow’s Feet, Smile Lines & Tone Irregularities",
+    "skinTypes": [
+      "All Skin Types",
+      "Sensitive Aging Skin",
+      "Combination"
+    ],
+    "keyIngredients": [
+      "Encapsulated 0.05% Retinaldehyde",
+      "Biofermented Oligopeptides",
+      "Apricot Kernel Oil"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Apply to Clean Face and Neck at Night",
+        "desc": "Cream-serum texture spreads like silk."
+      },
+      {
+        "step": "Step 2: Follow with Barrier Moisturizer",
+        "desc": "Locks in hydration."
+      }
+    ],
+    "skinBenefits": [
+      "Liposomal spheres ensure active is delivered slowly over 8 hours",
+      "Biofermented peptides encourage firmer skin architecture"
+    ],
+    "pros": [
+      "Zero offensive smell and luxurious pump bottle",
+      "Gentle enough for neck and decolletage"
+    ],
+    "cons": [
+      "Can take 4 to 6 weeks for full visible line softening"
+    ],
+    "verdict": "An elegant, gentle, and effective retinaldehyde serum accessible to everyday budgets.",
+    "fullContent": {
+      "intro": "Naturium Retinaldehyde Cream Serum 0.05%: Sustained-Release Radiance is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Naturium's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Naturium Retinaldehyde Cream Serum 0.05%: Sustained-Release Radiance offers an evidence-based approach to target crow’s feet, smile lines & tone irregularities, utilizing Encapsulated 0.05% Retinaldehyde and Biofermented Oligopeptides.",
+      "ingredientsBreakdown": "Key active components include Encapsulated 0.05% Retinaldehyde, Biofermented Oligopeptides, Apricot Kernel Oil, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for All Skin Types, Sensitive Aging Skin, Combination looking to achieve target crow’s feet, smile lines & tone irregularities.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Apply to Clean Face and Neck at Night; Step 2: Follow with Barrier Moisturizer.",
+      "finalVerdict": "An elegant, gentle, and effective retinaldehyde serum accessible to everyday budgets."
+    }
+  },
+  {
+    "id": "aa-9",
+    "slug": "olay-regenerist-retinol-24-night-cream",
+    "badge": "Nighttime Hydrator",
+    "rank": "#9",
+    "categoryTag": "RETINOID & NIACINAMIDE",
+    "category": "Anti-Aging",
+    "brand": "Olay",
+    "title": "Olay Regenerist Retinol 24 Night Moisturizer: 24-Hour Hydration & Retinol",
+    "subtitle": "Proprietary Vitamin B3 + Retinoid Complex that hydrates for 24 hours with zero greasy shine.",
+    "excerpt": "This silky night moisturizer delivers a proprietary retinoid complex deep into the skin’s surface layers while hydrating with Niacinamide for 24 hours, without waking up with dry flakes...",
+    "image": "/images/retinol_serum.jpg",
+    "author": {
+      "name": "Dr. Michael Chen, MD",
+      "role": "Clinical Dermatology Fellow",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 06, 2025",
+    "readTime": "5 min read",
+    "rating": 4.7,
+    "reviewCount": 380,
+    "commentCount": 45,
+    "routineStep": "Step 4: Evening 2-in-1 Cream",
+    "frequency": "Nightly",
+    "amountToUse": "Dime-sized dollop",
+    "targetSkinGoal": "Overnight Rejuvenation with Zero Flaking",
+    "skinTypes": [
+      "Beginners to Retinol",
+      "Normal to Dry",
+      "Mature Skin"
+    ],
+    "keyIngredients": [
+      "Retinoid Complex (Retinol + Retinyl Propionate)",
+      "Niacinamide (Vitamin B3)",
+      "Peptides",
+      "Glycerin"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Wash Face in Evening",
+        "desc": "Pat dry."
+      },
+      {
+        "step": "Step 2: Massage over Face and Neck",
+        "desc": "Absorbs instantly with zero greasy residue on pillows."
+      }
+    ],
+    "skinBenefits": [
+      "Niacinamide buffers against retinoid-induced epidermal flaking",
+      "Hydrates throughout the night for bouncy morning skin"
+    ],
+    "pros": [
+      "Completely fragrance-free and dye-free",
+      "Zero purging or flaking for 95% of users"
+    ],
+    "cons": [
+      "Gentler formulation takes longer to show deep wrinkle reduction compared to 1% pure retinol"
+    ],
+    "verdict": "The single most user-friendly entry point for anyone afraid of retinol peeling.",
+    "fullContent": {
+      "intro": "Olay Regenerist Retinol 24 Night Moisturizer: 24-Hour Hydration & Retinol is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Olay's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Olay Regenerist Retinol 24 Night Moisturizer: 24-Hour Hydration & Retinol offers an evidence-based approach to overnight rejuvenation with zero flaking, utilizing Retinoid Complex (Retinol + Retinyl Propionate) and Niacinamide (Vitamin B3).",
+      "ingredientsBreakdown": "Key active components include Retinoid Complex (Retinol + Retinyl Propionate), Niacinamide (Vitamin B3), Peptides, Glycerin, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Beginners to Retinol, Normal to Dry, Mature Skin looking to achieve overnight rejuvenation with zero flaking.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Wash Face in Evening; Step 2: Massage over Face and Neck.",
+      "finalVerdict": "The single most user-friendly entry point for anyone afraid of retinol peeling."
+    }
+  },
+  {
+    "id": "aa-10",
+    "slug": "murad-retinol-youth-renewal-serum",
+    "badge": "Tri-Active Technology",
+    "rank": "#10",
+    "categoryTag": "TRI-ACTIVE RETINOL",
+    "category": "Anti-Aging",
+    "brand": "Murad",
+    "title": "Murad Retinol Youth Renewal Serum: Fast-Acting Retinoid & Time-Released Blend",
+    "subtitle": "Clinically proven to minimize lines in 2 weeks with a fast-acting retinoid, time-released retinol, and retinol booster.",
+    "excerpt": "Murad’s proprietary Retinol Tri-Active Technology quickly and visibly minimizes lines and deep wrinkles, evens skin tone, and boosts radiance while remaining gentle on the skin barrier...",
+    "image": "/images/retinol_serum.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 03, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 295,
+    "commentCount": 39,
+    "routineStep": "Step 3: Fast-Acting Night Serum",
+    "frequency": "Nightly",
+    "amountToUse": "1 pump",
+    "targetSkinGoal": "Visible Wrinkle Reduction in 14 Days",
+    "skinTypes": [
+      "All Skin Types",
+      "Fine Lines",
+      "Uneven Complexion"
+    ],
+    "keyIngredients": [
+      "Fast-Acting Retinoid",
+      "Time-Released Retinol",
+      "Retinol Booster (Swertia Chirata)",
+      "Hyaluronic Acid"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Apply Thin Layer at Night",
+        "desc": "Smooth over face and neck."
+      },
+      {
+        "step": "Step 2: Follow with Night Cream",
+        "desc": "Wake up with radiant, luminous skin."
+      }
+    ],
+    "skinBenefits": [
+      "Tri-Active delivery ensures instant cellular activity plus continuous overnight renewal",
+      "Swertia Chirata extract enhances skin thickness and density"
+    ],
+    "pros": [
+      "Clinically proven results visible within 2 weeks",
+      "Glides on smoothly with zero pilling"
+    ],
+    "cons": [
+      "Higher investment luxury price point"
+    ],
+    "verdict": "A premium, clinically validated night serum that delivers noticeable improvements in line depth with speed.",
+    "fullContent": {
+      "intro": "Murad Retinol Youth Renewal Serum: Fast-Acting Retinoid & Time-Released Blend is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Murad's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Murad Retinol Youth Renewal Serum: Fast-Acting Retinoid & Time-Released Blend offers an evidence-based approach to visible wrinkle reduction in 14 days, utilizing Fast-Acting Retinoid and Time-Released Retinol.",
+      "ingredientsBreakdown": "Key active components include Fast-Acting Retinoid, Time-Released Retinol, Retinol Booster (Swertia Chirata), Hyaluronic Acid, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for All Skin Types, Fine Lines, Uneven Complexion looking to achieve visible wrinkle reduction in 14 days.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Apply Thin Layer at Night; Step 2: Follow with Night Cream.",
+      "finalVerdict": "A premium, clinically validated night serum that delivers noticeable improvements in line depth with speed."
+    }
+  },
+  {
+    "id": "mask-1",
+    "slug": "caudalie-purifying-clay-mask",
+    "badge": "Detox Ritual",
+    "rank": "#1",
+    "categoryTag": "DETOXIFYING CLAY MASK",
+    "category": "Masks",
+    "brand": "Caudalie",
+    "title": "Caudalie Vinopure Purifying Clay Mask: Clearing Pores in 5 Minutes",
+    "subtitle": "French green clay and natural zinc that unclog blackheads without cracking or parching skin.",
+    "excerpt": "An intensive natural clay mask enriched with purifying French green clay, sage, and zinc that visibly clears congested T-zones, absorbs excess oil, and tightens pores in just 5 to 10 minutes...",
+    "image": "/images/editor_clay.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 24, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 168,
+    "commentCount": 27,
+    "routineStep": "Weekly Detox Treatment (1–2x/week)",
+    "frequency": "Once or Twice Weekly (PM)",
+    "amountToUse": "Thin opaque layer over face or T-zone",
+    "targetSkinGoal": "Unclog Pores, Control Oil & Refine Skin Texture",
+    "skinTypes": [
+      "Oily Skin",
+      "Congested Pores",
+      "Blackhead-Prone",
+      "Combination"
+    ],
+    "keyIngredients": [
+      "French Green Clay",
+      "Natural Zinc",
+      "Organic Sage",
+      "Grape-Seed Polyphenols"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Cleanse Skin Thoroughly",
+        "desc": "Wash with warm water to loosen surface sebum."
+      },
+      {
+        "step": "Step 2: Apply a Thin Layer",
+        "desc": "Focus on oily T-zone, nose, and chin pores."
+      },
+      {
+        "step": "Step 3: Leave for 5–10 Minutes",
+        "desc": "Rinse as soon as the clay begins to dry; do not let it crack on skin."
+      },
+      {
+        "step": "Step 4: Follow with Barrier Moisturizer",
+        "desc": "Immediately hydrate to prevent rebound oiliness."
+      }
+    ],
+    "skinBenefits": [
+      "Draws out impurities and oxidised sebum plugs from deep within the pore lining",
+      "Zinc acts as a natural seboregulator, reducing midday oil breakthrough",
+      "Grape polyphenols protect skin lipids against oxidative darkening"
+    ],
+    "pros": [
+      "Non-drying formulation that rinses easily with lukewarm water",
+      "Visible reduction in blackhead appearance after just one use",
+      "Free of synthetic fragrances, parabens, and sulfates"
+    ],
+    "cons": [
+      "Sensitive skin should limit use to once every 10 days"
+    ],
+    "verdict": "The ideal purifying mask for city dwellers and anyone dealing with persistent blackheads. Deeply cleanses without the painful dryness of traditional clay.",
+    "fullContent": {
+      "intro": "Caudalie Vinopure Purifying Clay Mask: Clearing Pores in 5 Minutes is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Caudalie's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Caudalie Vinopure Purifying Clay Mask: Clearing Pores in 5 Minutes offers an evidence-based approach to unclog pores, control oil & refine skin texture, utilizing French Green Clay and Natural Zinc.",
+      "ingredientsBreakdown": "Key active components include French Green Clay, Natural Zinc, Organic Sage, Grape-Seed Polyphenols, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Oily Skin, Congested Pores, Blackhead-Prone, Combination looking to achieve unclog pores, control oil & refine skin texture.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Cleanse Skin Thoroughly; Step 2: Apply a Thin Layer; Step 3: Leave for 5–10 Minutes; Step 4: Follow with Barrier Moisturizer.",
+      "finalVerdict": "The ideal purifying mask for city dwellers and anyone dealing with persistent blackheads. Deeply cleanses without the painful dryness of traditional clay."
+    }
+  },
+  {
+    "id": "mask-2",
+    "slug": "laneige-water-sleeping-mask",
+    "badge": "Overnight Rescue",
+    "rank": "#2",
+    "categoryTag": "OVERNIGHT HYDRATION",
+    "category": "Masks",
+    "brand": "Laneige",
+    "title": "Laneige Water Sleeping Mask EX: Wake Up with Radiant Dewy Skin",
+    "subtitle": "Sleeping Micro-Biome technology and squalane that restore stressed skin while you sleep.",
+    "excerpt": "Formulated with a probiotic-derived complex and hydrating squalane, this refreshing overnight gel mask delivers intense moisture to fatigued skin so you wake up looking rested and glowing...",
+    "image": "/images/editor_clay.jpg",
+    "author": {
+      "name": "Dr. Rachel Adams, MD",
+      "role": "Board-Certified Dermatologist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 22, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 240,
+    "commentCount": 38,
+    "routineStep": "Weekly Night Hydration (2–3x/week)",
+    "frequency": "2 to 3 Nights Weekly",
+    "amountToUse": "Quarter-sized dollop",
+    "targetSkinGoal": "Overnight Barrier Restoration & Dewy Glow",
+    "skinTypes": [
+      "Dehydrated Skin",
+      "Tired Complexion",
+      "Dry Skin",
+      "Frequent Travelers"
+    ],
+    "keyIngredients": [
+      "Probiotic-Derived Complex (Lactobacillus Ferment)",
+      "Plant-Derived Squalane",
+      "Trehalose",
+      "Hyaluronic Acid"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Complete Normal Night Routine",
+        "desc": "Apply as the final step after your regular evening moisturizer."
+      },
+      {
+        "step": "Step 2: Scoop Generous Layer",
+        "desc": "Apply the sleeping mask evenly across face, avoiding immediate eye area."
+      },
+      {
+        "step": "Step 3: Leave Overnight",
+        "desc": "Sleep with mask on; rinse with lukewarm water the following morning."
+      }
+    ],
+    "skinBenefits": [
+      "Restores skin microflora balance with bio-fermented probiotic fractions",
+      "Forms a breathable hydro-shield that blocks nighttime evaporation",
+      "Delivers wake-up radiance: skin feels rested, supple, and glowing",
+      "Calms inflammation caused by dry winter air or central heating"
+    ],
+    "pros": [
+      "Refreshing water-gel texture that absorbs without sticking to pillows",
+      "Hypoallergenic and dermatologist-tested on sensitive skin",
+      "Instant cooling soothing relief on warm or flushed skin"
+    ],
+    "cons": [
+      "Allow 5 minutes to settle into skin before your face touches pillows"
+    ],
+    "verdict": "The ultimate antidote to dry, tired, sleep-deprived skin. Wake up with plump, refreshed, radiant morning skin.",
+    "fullContent": {
+      "intro": "Laneige Water Sleeping Mask EX: Wake Up with Radiant Dewy Skin is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Laneige's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Laneige Water Sleeping Mask EX: Wake Up with Radiant Dewy Skin offers an evidence-based approach to overnight barrier restoration & dewy glow, utilizing Probiotic-Derived Complex (Lactobacillus Ferment) and Plant-Derived Squalane.",
+      "ingredientsBreakdown": "Key active components include Probiotic-Derived Complex (Lactobacillus Ferment), Plant-Derived Squalane, Trehalose, Hyaluronic Acid, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Dehydrated Skin, Tired Complexion, Dry Skin, Frequent Travelers looking to achieve overnight barrier restoration & dewy glow.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Complete Normal Night Routine; Step 2: Scoop Generous Layer; Step 3: Leave Overnight.",
+      "finalVerdict": "The ultimate antidote to dry, tired, sleep-deprived skin. Wake up with plump, refreshed, radiant morning skin."
+    }
+  },
+  {
+    "id": "mask-3",
+    "slug": "aztec-secret-indian-healing-clay-mask",
+    "badge": "100% Bentonite",
+    "rank": "#3",
+    "categoryTag": "DEEP PORE DETOX",
+    "category": "Masks",
+    "brand": "Aztec Secret",
+    "title": "Aztec Secret Indian Healing Clay: The World’s Most Powerful Facial Detox",
+    "subtitle": "100% natural calcium bentonite clay that pulsates pores to draw out stubborn impurities.",
+    "excerpt": "World-renowned for its intense pore-purifying sensation, pure calcium bentonite clay draws out deeply embedded sebum, toxins, and debris when mixed with apple cider vinegar...",
+    "image": "/images/editor_clay.jpg",
+    "author": {
+      "name": "Dr. Michael Chen, MD",
+      "role": "Clinical Dermatology Fellow",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 20, 2025",
+    "readTime": "6 min read",
+    "rating": 4.7,
+    "reviewCount": 480,
+    "commentCount": 65,
+    "routineStep": "Deep Detox Treatment (1x/week)",
+    "frequency": "Once Weekly Max",
+    "amountToUse": "1 tablespoon clay + 1 tablespoon ACV",
+    "targetSkinGoal": "Purge Congested Pores & Shrink Blemishes",
+    "skinTypes": [
+      "Oily Skin",
+      "Severe Congestion",
+      "Acne-Prone"
+    ],
+    "keyIngredients": [
+      "100% Natural Calcium Bentonite Clay"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Mix Equal Parts Clay & Raw Apple Cider Vinegar",
+        "desc": "Use a non-metal bowl and utensil; mix into a smooth pudding consistency."
+      },
+      {
+        "step": "Step 2: Apply Even 1/4 Inch Layer",
+        "desc": "Let dry for 10–15 minutes until pulsating sensation occurs."
+      },
+      {
+        "step": "Step 3: Rinse with Warm Water",
+        "desc": "Mild facial redness for 30 minutes afterward is normal due to increased blood flow."
+      }
+    ],
+    "skinBenefits": [
+      "Negative ionic charge binds to positively charged cellular debris and impurities",
+      "Noticeable pore reduction and blemish drying overnight"
+    ],
+    "pros": [
+      "Inexpensive pure mineral clay that lasts for years",
+      "Unmatched suction power for stubborn blackheads"
+    ],
+    "cons": [
+      "Very intense for sensitive or dry skin types; must follow with soothing moisturizer"
+    ],
+    "verdict": "The ultimate heavy-duty pore purge. Best used on oily or congested T-zones when skin needs a clean reboot.",
+    "fullContent": {
+      "intro": "Aztec Secret Indian Healing Clay: The World’s Most Powerful Facial Detox is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Aztec Secret's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Aztec Secret Indian Healing Clay: The World’s Most Powerful Facial Detox offers an evidence-based approach to purge congested pores & shrink blemishes, utilizing 100% Natural Calcium Bentonite Clay.",
+      "ingredientsBreakdown": "Key active components include 100% Natural Calcium Bentonite Clay, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Oily Skin, Severe Congestion, Acne-Prone looking to achieve purge congested pores & shrink blemishes.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Mix Equal Parts Clay & Raw Apple Cider Vinegar; Step 2: Apply Even 1/4 Inch Layer; Step 3: Rinse with Warm Water.",
+      "finalVerdict": "The ultimate heavy-duty pore purge. Best used on oily or congested T-zones when skin needs a clean reboot."
+    }
+  },
+  {
+    "id": "mask-4",
+    "slug": "origins-clear-improvement-charcoal-mask",
+    "badge": "Bamboo Charcoal",
+    "rank": "#4",
+    "categoryTag": "ACTIVATED CHARCOAL MASK",
+    "category": "Masks",
+    "brand": "Origins",
+    "title": "Origins Clear Improvement Active Charcoal Mask: Clearing Urban Pollution",
+    "subtitle": "Bamboo charcoal and white China clay that act like magnets to draw out deep micro-impurities.",
+    "excerpt": "Formulated with bamboo charcoal and white China clay, this classic purifying mask absorbs environmental toxins, dissolves pore plugs, and leaves skin looking fresh and refined...",
+    "image": "/images/editor_clay.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 17, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 210,
+    "commentCount": 32,
+    "routineStep": "Weekly Clarifying Mask (1–2x/week)",
+    "frequency": "Once or twice weekly",
+    "amountToUse": "Opaque layer across face",
+    "targetSkinGoal": "Eliminate Environmental Pollutants & Reduce Shine",
+    "skinTypes": [
+      "Combination",
+      "Oily",
+      "Urban Dwellers"
+    ],
+    "keyIngredients": [
+      "Activated Bamboo Charcoal",
+      "White China Clay (Kaolin)",
+      "Lecithin"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Open Pores with Warm Moist Towel",
+        "desc": "Lay a warm washcloth over clean face for 30 seconds."
+      },
+      {
+        "step": "Step 2: Smooth Creamy Charcoal Mask",
+        "desc": "Allow to dry for 10 minutes."
+      },
+      {
+        "step": "Step 3: Rinse with Warm Water",
+        "desc": "Follow immediately with your hydrating serum."
+      }
+    ],
+    "skinBenefits": [
+      "Bamboo charcoal can absorb 100 times its weight in impurities",
+      "White China clay absorbs surface oils without irritating the skin mantle"
+    ],
+    "pros": [
+      "Creamier and easier to rinse than typical clay masks",
+      "Gentle enough for combination skin"
+    ],
+    "cons": [
+      "Needs thorough wiping around hairline to avoid gray residue"
+    ],
+    "verdict": "A trusted botanical detox mask that leaves skin clean, matte, and breathing freely.",
+    "fullContent": {
+      "intro": "Origins Clear Improvement Active Charcoal Mask: Clearing Urban Pollution is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Origins's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Origins Clear Improvement Active Charcoal Mask: Clearing Urban Pollution offers an evidence-based approach to eliminate environmental pollutants & reduce shine, utilizing Activated Bamboo Charcoal and White China Clay (Kaolin).",
+      "ingredientsBreakdown": "Key active components include Activated Bamboo Charcoal, White China Clay (Kaolin), Lecithin, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Combination, Oily, Urban Dwellers looking to achieve eliminate environmental pollutants & reduce shine.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Open Pores with Warm Moist Towel; Step 2: Smooth Creamy Charcoal Mask; Step 3: Rinse with Warm Water.",
+      "finalVerdict": "A trusted botanical detox mask that leaves skin clean, matte, and breathing freely."
+    }
+  },
+  {
+    "id": "mask-5",
+    "slug": "farmacy-honey-potion-plus-warming-mask",
+    "badge": "Ceramide Honey",
+    "rank": "#5",
+    "categoryTag": "WARMING HYDRATION MASK",
+    "category": "Masks",
+    "brand": "Farmacy",
+    "title": "Farmacy Honey Potion Plus: Ceramide Warming Treatment for Stressed Skin",
+    "subtitle": "Antioxidant-rich buckwheat honey that transforms into a comforting warming cream upon massage.",
+    "excerpt": "An intensely moisturizing warming mask featuring upcycled buckwheat honey, royal jelly, propolis, and ceramides that revitalizes dry, dull, and stressed skin in 10 minutes...",
+    "image": "/images/editor_clay.jpg",
+    "author": {
+      "name": "Dr. Rachel Adams, MD",
+      "role": "Board-Certified Dermatologist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 15, 2025",
+    "readTime": "5 min read",
+    "rating": 4.9,
+    "reviewCount": 260,
+    "commentCount": 39,
+    "routineStep": "Bi-Weekly Radiance Facial",
+    "frequency": "2 to 3 times weekly",
+    "amountToUse": "Magnetic spatula scoop",
+    "targetSkinGoal": "Nourish Depleted Barriers & Restore Plump Glow",
+    "skinTypes": [
+      "Dry",
+      "Dull",
+      "Stressed Complexion",
+      "Mature Skin"
+    ],
+    "keyIngredients": [
+      "Echinacea GreenEnvy Honey Blend",
+      "Ceramides",
+      "Royal Jelly",
+      "Propolis Extract"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Scoop with Magnetic Spatula",
+        "desc": "Dispense rich golden honey onto dry clean skin."
+      },
+      {
+        "step": "Step 2: Massage for 1–2 Minutes",
+        "desc": "Watch the honey warm up and transform into a rich white cream."
+      },
+      {
+        "step": "Step 3: Leave for 10–15 Minutes",
+        "desc": "Rinse with warm water to reveal luminous, plump skin."
+      }
+    ],
+    "skinBenefits": [
+      "Honey acts as a natural humectant and antibacterial barrier protectant",
+      "Ceramides lock in the moisture for long-lasting hydration"
+    ],
+    "pros": [
+      "Luxurious warming sensation feels like a five-star facial",
+      "Magnetic spatula stays neatly attached to lid"
+    ],
+    "cons": [
+      "Warm sensation can surprise hyper-sensitive skin on first use"
+    ],
+    "verdict": "The ultimate comforting winter mask. Turns dull, parched skin into a glowing, supple canvas in 15 minutes.",
+    "fullContent": {
+      "intro": "Farmacy Honey Potion Plus: Ceramide Warming Treatment for Stressed Skin is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Farmacy's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Farmacy Honey Potion Plus: Ceramide Warming Treatment for Stressed Skin offers an evidence-based approach to nourish depleted barriers & restore plump glow, utilizing Echinacea GreenEnvy Honey Blend and Ceramides.",
+      "ingredientsBreakdown": "Key active components include Echinacea GreenEnvy Honey Blend, Ceramides, Royal Jelly, Propolis Extract, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Dry, Dull, Stressed Complexion, Mature Skin looking to achieve nourish depleted barriers & restore plump glow.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Scoop with Magnetic Spatula; Step 2: Massage for 1–2 Minutes; Step 3: Leave for 10–15 Minutes.",
+      "finalVerdict": "The ultimate comforting winter mask. Turns dull, parched skin into a glowing, supple canvas in 15 minutes."
+    }
+  },
+  {
+    "id": "mask-6",
+    "slug": "peter-thomas-roth-pumpkin-enzyme-mask",
+    "badge": "Enzyme Polish",
+    "rank": "#6",
+    "categoryTag": "ENZYMATIC RESURFACER",
+    "category": "Masks",
+    "brand": "Peter Thomas Roth",
+    "title": "Peter Thomas Roth Pumpkin Enzyme Mask: Triple-Action Resurfacing Peel",
+    "subtitle": "Enzymatic exfoliation, AHA chemical peeling, and aluminum oxide crystals in one.",
+    "excerpt": "A powerful triple-action resurfacing mask that exfoliates mechanically with aluminum oxide crystals, chemically with glycolic acid, and enzymatically with natural pumpkin puree...",
+    "image": "/images/editor_clay.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 12, 2025",
+    "readTime": "6 min read",
+    "rating": 4.8,
+    "reviewCount": 310,
+    "commentCount": 44,
+    "routineStep": "Weekly Surface Polish",
+    "frequency": "Once or twice weekly",
+    "amountToUse": "Thin layer",
+    "targetSkinGoal": "Smooth Uneven Bumps & Restore Radiant Polish",
+    "skinTypes": [
+      "Dull Skin",
+      "Rough Texture",
+      "Congested Skin"
+    ],
+    "keyIngredients": [
+      "Natural Pumpkin Enzyme",
+      "Alpha Hydroxy Acid (Glycolic Acid)",
+      "Aluminum Oxide Crystals"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Apply to Clean Skin",
+        "desc": "Massage in gentle circular motions for 30 seconds."
+      },
+      {
+        "step": "Step 2: Leave for 3 to 7 Minutes",
+        "desc": "Allow the glycolic acid and pumpkin enzymes to digest dead cells."
+      },
+      {
+        "step": "Step 3: Rinse Thoroughly with Cool Water",
+        "desc": "Feel glass-smooth skin immediately."
+      }
+    ],
+    "skinBenefits": [
+      "Enzymatic digestion dissolves desmosomes holding dead skin flakes together",
+      "Noticeably brightens uneven skin tone in minutes"
+    ],
+    "pros": [
+      "Smells heavenly like freshly baked pumpkin pie",
+      "Professional microdermabrasion results at home"
+    ],
+    "cons": [
+      "Very potent: not for active rosacea or broken skin barriers"
+    ],
+    "verdict": "The most effective polishing mask in beauty for immediate glass-like skin smoothness.",
+    "fullContent": {
+      "intro": "Peter Thomas Roth Pumpkin Enzyme Mask: Triple-Action Resurfacing Peel is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Peter Thomas Roth's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Peter Thomas Roth Pumpkin Enzyme Mask: Triple-Action Resurfacing Peel offers an evidence-based approach to smooth uneven bumps & restore radiant polish, utilizing Natural Pumpkin Enzyme and Alpha Hydroxy Acid (Glycolic Acid).",
+      "ingredientsBreakdown": "Key active components include Natural Pumpkin Enzyme, Alpha Hydroxy Acid (Glycolic Acid), Aluminum Oxide Crystals, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Dull Skin, Rough Texture, Congested Skin looking to achieve smooth uneven bumps & restore radiant polish.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Apply to Clean Skin; Step 2: Leave for 3 to 7 Minutes; Step 3: Rinse Thoroughly with Cool Water.",
+      "finalVerdict": "The most effective polishing mask in beauty for immediate glass-like skin smoothness."
+    }
+  },
+  {
+    "id": "mask-7",
+    "slug": "summer-fridays-jet-lag-mask",
+    "badge": "Traveler Staple",
+    "rank": "#7",
+    "categoryTag": "AIR-TRAVEL RECOVERY",
+    "category": "Masks",
+    "brand": "Summer Fridays",
+    "title": "Summer Fridays Jet Lag Mask: Hydration Blanket for Cabin-Dehydrated Skin",
+    "subtitle": "Niacinamide, glycerin, and hyaluronic acid formulated to rescue parched, tired skin.",
+    "excerpt": "An iconic multi-tasking mask that can be used as a 10-minute flash facial or a rich leave-on overnight moisture mask, replenishing hydration lost in dry pressurized airplane cabins...",
+    "image": "/images/editor_clay.jpg",
+    "author": {
+      "name": "Dr. Michael Chen, MD",
+      "role": "Clinical Dermatology Fellow",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 10, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 275,
+    "commentCount": 36,
+    "routineStep": "Overnight or 10-Minute Hydration",
+    "frequency": "As needed (or 2x weekly)",
+    "amountToUse": "Generous layer",
+    "targetSkinGoal": "Relieve Extreme Dehydration & Plump Skin",
+    "skinTypes": [
+      "Dehydrated Skin",
+      "Dry Skin",
+      "Travelers",
+      "Dull Skin"
+    ],
+    "keyIngredients": [
+      "Niacinamide",
+      "Glycerin",
+      "Hyaluronic Acid",
+      "Bisabolol (Soothing)"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Apply Generous Layer to Clean Face",
+        "desc": "Can be placed right under eyes to soothe puffiness."
+      },
+      {
+        "step": "Step 2: Leave for 10 Minutes or Overnight",
+        "desc": "Wipe off excess with a warm cloth or leave on as a sleep mask."
+      }
+    ],
+    "skinBenefits": [
+      "Restores moisture balance in ultra-dry sub-15% humidity environments",
+      "Bisabolol calms skin flushing and redness"
+    ],
+    "pros": [
+      "Fragrance-free reformulated version safe for sensitive skin",
+      "Versatile multi-use as primer, mask, or night cream"
+    ],
+    "cons": [
+      "Rich texture best suited for parched or dry skin"
+    ],
+    "verdict": "The gold standard travel companion for bouncy, glowing skin before or after long flights.",
+    "fullContent": {
+      "intro": "Summer Fridays Jet Lag Mask: Hydration Blanket for Cabin-Dehydrated Skin is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Summer Fridays's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Summer Fridays Jet Lag Mask: Hydration Blanket for Cabin-Dehydrated Skin offers an evidence-based approach to relieve extreme dehydration & plump skin, utilizing Niacinamide and Glycerin.",
+      "ingredientsBreakdown": "Key active components include Niacinamide, Glycerin, Hyaluronic Acid, Bisabolol (Soothing), engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Dehydrated Skin, Dry Skin, Travelers, Dull Skin looking to achieve relieve extreme dehydration & plump skin.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Apply Generous Layer to Clean Face; Step 2: Leave for 10 Minutes or Overnight.",
+      "finalVerdict": "The gold standard travel companion for bouncy, glowing skin before or after long flights."
+    }
+  },
+  {
+    "id": "mask-8",
+    "slug": "sulwhasoo-overnight-vitalizing-mask",
+    "badge": "Hanbang Herbal",
+    "rank": "#8",
+    "categoryTag": "KOREAN HERBAL SLEEP MASK",
+    "category": "Masks",
+    "brand": "Sulwhasoo",
+    "title": "Sulwhasoo Overnight Vitalizing Mask: Traditional Hanbang Radiance",
+    "subtitle": "Scutellaria baicalensis and walnut extract that nourish and brighten skin overnight.",
+    "excerpt": "Infused with traditional Korean Hanbang herbs, this comforting sleeping mask delivers rich nutrients to skin overnight, creating a breathable veil that reveals radiant morning vitality...",
+    "image": "/images/editor_clay.jpg",
+    "author": {
+      "name": "Sarah Johnson",
+      "role": "Senior Cosmetic Chemist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 07, 2025",
+    "readTime": "5 min read",
+    "rating": 4.9,
+    "reviewCount": 320,
+    "commentCount": 42,
+    "routineStep": "Evening Sleep Mask (2–3x/week)",
+    "frequency": "2 to 3 nights weekly",
+    "amountToUse": "Almond-sized dollop",
+    "targetSkinGoal": "Overnight Cellular Vitality & Morning Glow",
+    "skinTypes": [
+      "Mature Skin",
+      "Dull",
+      "Fatigued Skin",
+      "Dry"
+    ],
+    "keyIngredients": [
+      "Nutritive RED Elixir (Jujube & Pomegranate)",
+      "Scutellaria Baicalensis Root",
+      "Walnut Shell Extract",
+      "Ginseng"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Smooth as Final Step of Night Routine",
+        "desc": "Cushions the skin with a soothing herbal aroma."
+      },
+      {
+        "step": "Step 2: Sleep and Wash with Tepid Water in AM",
+        "desc": "Rinse off without cleanser to leave nourishing barrier intact."
+      }
+    ],
+    "skinBenefits": [
+      "Traditional Hanbang herbs stimulate healthy microcirculation",
+      "Reduces morning dullness and puffiness dramatically"
+    ],
+    "pros": [
+      "Warm herbal ginseng aroma calms before sleep",
+      "Absorbs without sticking to pillowcases"
+    ],
+    "cons": [
+      "Luxury K-beauty pricing reflects rare heritage botanicals"
+    ],
+    "verdict": "An exquisite Korean sleeping mask that makes tired, stressed skin look as though you slept for ten blissful hours.",
+    "fullContent": {
+      "intro": "Sulwhasoo Overnight Vitalizing Mask: Traditional Hanbang Radiance is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Sulwhasoo's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Sulwhasoo Overnight Vitalizing Mask: Traditional Hanbang Radiance offers an evidence-based approach to overnight cellular vitality & morning glow, utilizing Nutritive RED Elixir (Jujube & Pomegranate) and Scutellaria Baicalensis Root.",
+      "ingredientsBreakdown": "Key active components include Nutritive RED Elixir (Jujube & Pomegranate), Scutellaria Baicalensis Root, Walnut Shell Extract, Ginseng, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Mature Skin, Dull, Fatigued Skin, Dry looking to achieve overnight cellular vitality & morning glow.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Smooth as Final Step of Night Routine; Step 2: Sleep and Wash with Tepid Water in AM.",
+      "finalVerdict": "An exquisite Korean sleeping mask that makes tired, stressed skin look as though you slept for ten blissful hours."
+    }
+  },
+  {
+    "id": "mask-9",
+    "slug": "im-from-mugwort-soothing-mask",
+    "badge": "Pure Botanical Calm",
+    "rank": "#9",
+    "categoryTag": "SOOTHING WASH-OFF GEL",
+    "category": "Masks",
+    "brand": "I'm From",
+    "title": "I'm From Mugwort Mask: 2.1% Ganghwa Mugwort for Instant Redness Relief",
+    "subtitle": "Top-grade fermented Ganghwa Artemisia Princeps that detoxifies and calms inflamed skin.",
+    "excerpt": "A premium wash-off mask containing 2.1% pure ground Ganghwa mugwort that lowers skin temperature, detoxifies congested pores, and calms irritated, acne-inflamed skin immediately...",
+    "image": "/images/editor_clay.jpg",
+    "author": {
+      "name": "Dr. Rachel Adams, MD",
+      "role": "Board-Certified Dermatologist",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 05, 2025",
+    "readTime": "5 min read",
+    "rating": 4.8,
+    "reviewCount": 230,
+    "commentCount": 31,
+    "routineStep": "Wash-Off Calming Treatment",
+    "frequency": "2 to 3 times weekly",
+    "amountToUse": "Generous layer",
+    "targetSkinGoal": "Lower Skin Heat & Quench Inflammatory Redness",
+    "skinTypes": [
+      "Irritated Skin",
+      "Acne-Prone",
+      "Rosacea-Prone",
+      "Over-Heated Skin"
+    ],
+    "keyIngredients": [
+      "2.1% Ganghwa Mugwort (Artemisia Princeps)",
+      "Centella Asiatica",
+      "Licorice Root",
+      "Cordyceps Sinensis"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Apply Even Layer onto Clean Face",
+        "desc": "Real mugwort botanical pieces visible in the soothing gel."
+      },
+      {
+        "step": "Step 2: Rest for 10–15 Minutes",
+        "desc": "Cooling relief begins within 60 seconds."
+      },
+      {
+        "step": "Step 3: Rinse with Lukewarm Water",
+        "desc": "Leaves skin completely calm, tranquil, and clear."
+      }
+    ],
+    "skinBenefits": [
+      "Mugwort contains potent flavonoids that inhibit inflammatory prostaglandins",
+      "Safely cools facial temperature after sun exposure or workouts"
+    ],
+    "pros": [
+      "Pure herbal formula with zero artificial colorants",
+      "Instant relief for active red pimples and cystic tenderness"
+    ],
+    "cons": [
+      "Authentic natural herbal aroma from pure ground mugwort"
+    ],
+    "verdict": "The ultimate botanical compress for hot, angry, flushed skin. Works wonders on active breakouts.",
+    "fullContent": {
+      "intro": "I'm From Mugwort Mask: 2.1% Ganghwa Mugwort for Instant Redness Relief is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated I'm From's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "I'm From Mugwort Mask: 2.1% Ganghwa Mugwort for Instant Redness Relief offers an evidence-based approach to lower skin heat & quench inflammatory redness, utilizing 2.1% Ganghwa Mugwort (Artemisia Princeps) and Centella Asiatica.",
+      "ingredientsBreakdown": "Key active components include 2.1% Ganghwa Mugwort (Artemisia Princeps), Centella Asiatica, Licorice Root, Cordyceps Sinensis, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for Irritated Skin, Acne-Prone, Rosacea-Prone, Over-Heated Skin looking to achieve lower skin heat & quench inflammatory redness.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Apply Even Layer onto Clean Face; Step 2: Rest for 10–15 Minutes; Step 3: Rinse with Lukewarm Water.",
+      "finalVerdict": "The ultimate botanical compress for hot, angry, flushed skin. Works wonders on active breakouts."
+    }
+  },
+  {
+    "id": "mask-10",
+    "slug": "mediheal-nmf-intensive-hydrating-sheet-mask",
+    "badge": "Sheet Mask Legend",
+    "rank": "#10",
+    "categoryTag": "NATURAL MOISTURIZING FACTORS",
+    "category": "Masks",
+    "brand": "Mediheal",
+    "title": "Mediheal N.M.F Intensive Hydrating Mask: Cotton Sheet Infused with NMF",
+    "subtitle": "Hyaluronic acid, amino acids, and witch hazel concentrated in a patented bamboo cellulose sheet.",
+    "excerpt": "The bestselling sheet mask in Asian beauty history. Saturated with natural moisturizing factors, ceramides, and sodium hyaluronate, it drenches skin with moisture in 15 minutes...",
+    "image": "/images/editor_clay.jpg",
+    "author": {
+      "name": "Dr. Michael Chen, MD",
+      "role": "Clinical Dermatology Fellow",
+      "avatar": "/images/hero_glow.jpg"
+    },
+    "date": "Apr 02, 2025",
+    "readTime": "4 min read",
+    "rating": 4.9,
+    "reviewCount": 410,
+    "commentCount": 54,
+    "routineStep": "Sheet Mask Hydration Step",
+    "frequency": "Weekly or before special events",
+    "amountToUse": "1 single-use sheet mask",
+    "targetSkinGoal": "Instant Plumping & Pre-Makeup Glass Skin",
+    "skinTypes": [
+      "All Skin Types",
+      "Dehydrated",
+      "Event-Ready Skin"
+    ],
+    "keyIngredients": [
+      "Natural Moisturizing Factors (NMF)",
+      "Hyaluronic Acid",
+      "Ceramide NP",
+      "Witch Hazel"
+    ],
+    "howToUseSteps": [
+      {
+        "step": "Step 1: Unfold and Align Mask on Face",
+        "desc": "Smooth out air bubbles across forehead, nose, and jawline."
+      },
+      {
+        "step": "Step 2: Relax for 15–20 Minutes",
+        "desc": "Cotton sheet turns white as the serum absorbs into skin."
+      },
+      {
+        "step": "Step 3: Remove and Pat Excess Essence",
+        "desc": "Do not rinse! Let the rich NMF essence sink in completely."
+      }
+    ],
+    "skinBenefits": [
+      "Replicates the skin’s natural lipid hydration matrix for instant skin recovery",
+      "Fills dehydration lines for effortless makeup adherence"
+    ],
+    "pros": [
+      "Ultra-dense bamboo cellulose hugs every contour of the face without slipping",
+      "Superb value per mask sheet"
+    ],
+    "cons": [
+      "Single-use packaging generates more paper/foil waste than jars"
+    ],
+    "verdict": "The quintessential emergency hydration sheet mask. Preps your face for glass-skin perfection in 15 minutes.",
+    "fullContent": {
+      "intro": "Mediheal N.M.F Intensive Hydrating Mask: Cotton Sheet Infused with NMF is designed to educate readers on proper clinical skincare application, ingredient synergy, and daily barrier health.",
+      "whatWeTested": "We evaluated Mediheal's formulation for epidermal compatibility, skin barrier preservation, and real-world results across 30 volunteers over 8 weeks.",
+      "productOverview": "Mediheal N.M.F Intensive Hydrating Mask: Cotton Sheet Infused with NMF offers an evidence-based approach to instant plumping & pre-makeup glass skin, utilizing Natural Moisturizing Factors (NMF) and Hyaluronic Acid.",
+      "ingredientsBreakdown": "Key active components include Natural Moisturizing Factors (NMF), Hyaluronic Acid, Ceramide NP, Witch Hazel, engineered to work harmoniously without sensitizing the skin.",
+      "whoItsFor": "Formulated specifically for All Skin Types, Dehydrated, Event-Ready Skin looking to achieve instant plumping & pre-makeup glass skin.",
+      "howWeTested": "Volunteers incorporated this guide into their routine: Step 1: Unfold and Align Mask on Face; Step 2: Relax for 15–20 Minutes; Step 3: Remove and Pat Excess Essence.",
+      "finalVerdict": "The quintessential emergency hydration sheet mask. Preps your face for glass-skin perfection in 15 minutes."
+    }
+  }
+];
+
+export const FEATURED_POST = ALL_POSTS.find(p => p.slug === 'the-5-best-vitamin-c-serums-for-glowing-skin-in-2025') || ALL_POSTS[0];
+
+export const TOP_RATED_WEEK = [
+  ALL_POSTS.find(p => p.slug === 'cerave-moisturizing-cream-review') || ALL_POSTS[10],
+  ALL_POSTS.find(p => p.slug === 'the-ordinary-retinol-0-5-in-squalane') || ALL_POSTS[40],
+  ALL_POSTS.find(p => p.slug === 'eltamd-uv-clear-spf-46') || ALL_POSTS[30],
+  ALL_POSTS.find(p => p.slug === 'caudalie-purifying-clay-mask') || ALL_POSTS[50]
+];
+
+export const EDITORS_PICK = ALL_POSTS.find(p => p.slug === 'la-roche-posay-cicaplast-baume-b5') || ALL_POSTS[11];
+
+export const LATEST_REVIEWS = [
+  ALL_POSTS.find(p => p.slug === 'cerave-hydrating-cleanser-guide') || ALL_POSTS[0],
+  ALL_POSTS.find(p => p.slug === 'medik8-crystal-retinal-3-review') || ALL_POSTS[41],
+  ALL_POSTS.find(p => p.slug === 'la-roche-posay-anthelios-uvmune-400') || ALL_POSTS[31],
+  ALL_POSTS.find(p => p.slug === 'laneige-water-sleeping-mask') || ALL_POSTS[51],
+  ALL_POSTS.find(p => p.slug === 'sunday-riley-good-genes-lactic-acid') || ALL_POSTS[27],
+  ALL_POSTS.find(p => p.slug === 'first-aid-beauty-ultra-repair-cream') || ALL_POSTS[12]
+];
+
+export const MOST_POPULAR = [
+  {
+    id: 'pop-1',
+    rank: 1,
+    slug: 'the-5-best-vitamin-c-serums-for-glowing-skin-in-2025',
+    title: 'How to Use Vitamin C for Maximum Glow & Radiance',
+    image: '/images/vitamin_c.jpg',
+    rating: 4.8,
+    reviews: 124,
+    category: 'Serums'
+  },
+  {
+    id: 'pop-2',
+    rank: 2,
+    slug: 'the-ordinary-retinol-0-5-in-squalane',
+    title: 'The Safe Retinol Guide: How to Avoid Peeling & Purging',
+    image: '/images/retinol_serum.jpg',
+    rating: 4.7,
+    reviews: 156,
+    category: 'Anti-Aging'
+  },
+  {
+    id: 'pop-3',
+    rank: 3,
+    slug: 'cerave-moisturizing-cream-review',
+    title: 'Barrier Repair 101: How to Heal Stinging & Tight Skin',
+    image: '/images/ceramide_cream.jpg',
+    rating: 4.9,
+    reviews: 220,
+    category: 'Moisturizers'
+  },
+  {
+    id: 'pop-4',
+    rank: 4,
+    slug: 'la-roche-posay-vitamin-c-serum',
+    title: 'How to Brighten Sensitive Skin Without Redness',
+    image: '/images/vitamin_c.jpg',
+    rating: 4.8,
+    reviews: 187,
+    category: 'Serums'
+  },
+  {
+    id: 'pop-5',
+    rank: 5,
+    slug: 'eltamd-uv-clear-spf-46',
+    title: 'Why Daily Sunscreen is the Ultimate Anti-Aging Step',
+    image: '/images/sunscreen.jpg',
+    rating: 4.8,
+    reviews: 142,
+    category: 'Sunscreens'
+  }
+];
